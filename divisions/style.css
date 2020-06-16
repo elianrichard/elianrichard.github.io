@@ -1,7 +1,15 @@
 @font-face {
-    font-family: Wilderness;
-    src: url(Wilderness.ttf);
-  }
+    font-family: "Wilderness";
+    src: url("./fonts/Wilderness.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/Wilderness.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Wilderness.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Wilderness.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Wilderness.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Wilderness.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Wilderness.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
 
 *{
     box-sizing: border-box;
