@@ -11,6 +11,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Montserrat";
+    src: url("./fonts/Montserrat.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/Montserrat.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("./fonts/Montserrat.otf") format("opentype"), /* Open Type Font */
+      url("./fonts/Montserrat.svg") format("svg"), /* Legacy iOS */
+      url("./fonts/Montserrat.ttf") format("truetype"), /* Safari, Android, iOS */
+      url("./fonts/Montserrat.woff") format("woff"), /* Modern Browsers */
+      url("./fonts/Montserrat.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
