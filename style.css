@@ -514,12 +514,11 @@ body {
 /* Landing - Youtube */
 .youtube-grid{
     height: 100%;
-    display: grid;
-    grid-template-rows: 45% 55%;
 }
 .youtube-highlight{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
 }
 .video-highlight{
     border-radius: 30px;
@@ -897,6 +896,11 @@ body {
     }
 }
 
+@media only screen and (max-height: 600px){
+    .misi-card p{
+        font-size: 1rem;
+    }
+}
 
 /* Java Script */
 .visi-appear{
@@ -1346,9 +1350,7 @@ body {
     grid-template-columns: 35% 5% 60%;
 }
 .diktat-navbar{
-    display: grid;
     height: 100%;
-    grid-template-rows: 20% 80%;
     padding-left: 5rem;
 }
 .diktat-line div{
