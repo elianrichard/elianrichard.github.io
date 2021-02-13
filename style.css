@@ -186,6 +186,7 @@ body {
 }
 .logo-ime{
     width: 100%;
+    height: auto;
 }
 .logo-ime-container{
     display: flex;
@@ -329,6 +330,7 @@ body {
     }
 }
 
+
 @media only screen and (min-width: 768.5px) and (max-width: 1020px){
     .landing-grid{
         grid-template-rows: 60% 15% 15%;
@@ -349,6 +351,11 @@ body {
 @media only screen and (min-width: 1256px){
     .logo-ime-container{
         width: 300px;
+    }
+}
+@media only screen and (max-height: 600px){
+    .logo-ime-container{
+        width: 250px;
     }
 }
 
@@ -417,6 +424,7 @@ body {
 }
 .logbid-logos img{
     width: 100%;
+    height: auto;
     transform: scale(1, 1);
     -webkit-transition: 0.4s all ease;
     transition: 0.4s all ease;
@@ -991,6 +999,7 @@ body {
 }
 .modal-foto-container img{
     width: 100%;
+    height: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -1248,6 +1257,7 @@ body {
 }
 .bp-foto img{
     width: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -1513,6 +1523,7 @@ body {
 .ebook img{
     border-radius: 30px;
     width: 100%;
+    height: auto;
 }
 .ebook-cover > h1{
     position: absolute;
