@@ -190,6 +190,7 @@ body {
 }
 .logo-ime-container{
     display: flex;
+    align-items: flex-start;
     position: relative;
     width: 25vw;
 }
