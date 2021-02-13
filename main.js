@@ -486,7 +486,7 @@ function indexLoaded(e){
                         if (e.target.parentElement.classList.contains('logbid-kominfo')){
                             bidangTitle.textContent = 'Komunikasi dan Informasi';
                             bidangDesc.textContent = 'Bidang Komunikasi dan Informasi merupakan bidang pelayanan informasi serta menjalin hubungan baik dengan internal maupun eksternal DTE.';
-                            bidangButton.href = '/bidang-template-kominfo.html'
+                            bidangButton.href = '/bidang-template.html'
                             bidangMainLogo.src = 'assets/logbid/kominfo.png';
                         } 
                         else if (e.target.parentElement.classList.contains('logbid-kema')){
