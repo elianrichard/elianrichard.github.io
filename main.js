@@ -1302,8 +1302,86 @@ function diktatLoaded(e){
     diktatBookContainer.forEach((a) => {
         a.parentElement.target = '_blank';
     })
-    // console.dir(document.querySelector('.uts-ganjil-2020').parentElement.nextElementSibling.querySelector('a'))
-    document.querySelector('.uts-ganjil-2020').parentElement.nextElementSibling.querySelector('a').text = "Diktat UTS Ganjil 2020"
+    document.querySelectorAll('.diktat-link').forEach((a) => {
+        a.querySelectorAll('a').forEach((b) => {
+            b.target = '_blank';
+        })
+    })
+
+    document.querySelectorAll('.diktat-link-header').forEach((a) => {
+        for (let i = 0; i <= 14; i++){
+            if (a.classList.contains('uts-ganjil-2020')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGanjil20[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGanjil20[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGanjil20[i].display;
+            }
+            if (a.classList.contains('uas-ganjil-2020')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGanjil20[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGanjil20[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGanjil20[i].display;
+            }
+            if (a.classList.contains('uts-genap-2020')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGenap20[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGenap20[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGenap20[i].display;
+            }
+            if (a.classList.contains('uas-genap-2020')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGenap20[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGenap20[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGenap20[i].display;
+            }
+            if (a.classList.contains('uts-ganjil-2019')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGanjil19[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGanjil19[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGanjil19[i].display;
+            }
+            if (a.classList.contains('uas-ganjil-2019')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGanjil19[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGanjil19[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGanjil19[i].display;
+            }
+            if (a.classList.contains('uts-genap-2019')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGenap19[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGenap19[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGenap19[i].display;
+            }
+            if (a.classList.contains('uas-genap-2019')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGenap19[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGenap19[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGenap19[i].display;
+            }
+            if (a.classList.contains('uts-ganjil-2018')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGanjil18[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGanjil18[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGanjil18[i].display;
+            }
+            if (a.classList.contains('uas-ganjil-2018')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGanjil18[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGanjil18[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGanjil18[i].display;
+            }
+            if (a.classList.contains('uts-genap-2018')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGenap18[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGenap18[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGenap18[i].display;
+            }
+            if (a.classList.contains('uas-genap-2018')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGenap18[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGenap18[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGenap18[i].display;
+            }
+            if (a.classList.contains('uts-ganjil-2017')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGanjil17[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGanjil17[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGanjil17[i].display;
+            }
+            if (a.classList.contains('uas-ganjil-2017')){
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGanjil17[i].title;
+                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGanjil17[i].link;
+                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGanjil17[i].display;
+            }
+        }
+    })
 
     document.querySelectorAll('.diktat-link-header').forEach((a) => {
         a.addEventListener('click', () => {
