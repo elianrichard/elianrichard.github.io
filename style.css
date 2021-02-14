@@ -64,6 +64,16 @@
     position: relative;
     height: 100vh;
 }
+@media only screen and (max-width: 768px){
+    .section{
+        height: auto !important;
+    }
+}
+@media only screen and (max-height: 600px){
+    .section{
+        height: auto !important;
+    }
+}
 .space{
     position: relative;
     height: 5rem;
@@ -164,6 +174,14 @@ body {
     .burger{
         display: flex;
         cursor: pointer;
+    }
+    .logo-elektro{
+        width: 30px;
+    }
+}
+@media only screen and (max-height: 600px){
+    .logo-elektro{
+        width: 30px;
     }
 }
 
@@ -760,9 +778,6 @@ body {
     box-shadow: 2px 2px 10px 0 rgba(1, 84, 107, 0.4);
 } */
 @media only screen and (max-width: 768px){
-    .section{
-        height: auto !important;
-    }
     .contact-desc{
         display: flex;
         flex-direction: column;
@@ -1055,7 +1070,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10vh;
+        margin-top: 15vh;
     }
     .bidang-desc{
         display: flex;
@@ -1112,6 +1127,23 @@ body {
     }
 }
 
+@media only screen and (max-height: 600px){
+    .bidang-landing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bidang-foto-container{
+        height: auto;
+    }
+    .bidang-logo img{
+        width: 150px;
+    }
+    .container-video-bidang-section{
+        height: auto;
+    }
+}
 /* video bidang */
 .container-video-bidang-section{
     width: 80%;
@@ -1123,7 +1155,7 @@ body {
     height: 70%;
     margin: 2rem auto 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -1131,10 +1163,13 @@ body {
     text-align: right;
 }
 .video-bidang{
-    height: 70%;
-    width: 85%;
-    background-color: grey;
-    border-radius: 30px;;
+    position: absolute;
+    left: 10%;
+    height: 430px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 4px 4px 10px 0 rgba(1, 84, 107, 0.4);
 }
 .video-background{
     background-color: var(--red);
@@ -1144,16 +1179,46 @@ body {
     left: 0;
     top: 0;
     z-index: -5;
+    border-radius: 30px;
+}
+
+@media only screen and (max-width: 1256px){
+    .video-bidang{
+        height: 400px;
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 1020px){
+    .video-bidang{
+        height: 40vw;
+        width: 60vw;
+    }
 }
 
 @media only screen and (max-width: 768px){
     .video-bidang-container{
-        height: 50vw;
+        height: 60vw;
         width: 100%;
         margin: 0;
     }
     .video-bidang-title h1{
         font-size: 36px;
+    }
+    .video-bidang{
+        height: 40vw;
+        width: 70vw;
+    }
+}
+@media only screen and (max-height: 600px){
+    .video-bidang-container{
+        height: 80vh;
+        width: 100%;
+        margin: 0;
+    }
+    .video-bidang{
+        position: static;
+        height: 50vh;
+        width: 50vw; 
     }
 }
 
@@ -1393,18 +1458,17 @@ body {
 }
 .diktat-lists > li{
     margin: 0.5rem auto;
-    background-color: var(--yellow);
     padding: 0 0.5rem;
     border-radius: 30px;
     display: flex;
+    background-color: var(--yellow);
     justify-content: center;
 }
 .diktat-lists li > a{
     font-size: 1rem;
     text-decoration: none;
-    display: block;
 }
-.diktat-list a i{
+.diktat-list i{
     margin-right: 1rem;
 }
 .diktat-list{
@@ -1412,6 +1476,11 @@ body {
     opacity: 1;
     overflow: hidden;
     display: none;
+}
+.diktat-list-header{
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 .diktat-link-header{
     opacity: 0;

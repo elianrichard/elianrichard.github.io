@@ -1245,7 +1245,7 @@ function diktatLoaded(e){
                     delay: (el, i) => {
                         return (100 * i) ;
                     }
-                })
+                }, '-=300')
                 selectedHeader.classList.add('open');
             }
         })
@@ -1302,6 +1302,8 @@ function diktatLoaded(e){
     diktatBookContainer.forEach((a) => {
         a.parentElement.target = '_blank';
     })
+    // console.dir(document.querySelector('.uts-ganjil-2020').parentElement.nextElementSibling.querySelector('a'))
+    document.querySelector('.uts-ganjil-2020').parentElement.nextElementSibling.querySelector('a').text = "Diktat UTS Ganjil 2020"
 
     document.querySelectorAll('.diktat-link-header').forEach((a) => {
         a.addEventListener('click', () => {
@@ -1317,6 +1319,78 @@ function diktatLoaded(e){
                         diktatBookContainer[i].parentElement.style.display = uasGanjil20[i].display
                         diktatBookTitle[i].querySelector('h1').textContent = uasGanjil20[i].title.toUpperCase();
                         diktatBookCover[i].querySelector('img').src = uasGanjil20[i].img
+                }
+                if (a.classList.contains('uts-genap-2020')){
+                        diktatBookContainer[i].parentElement.href = utsGenap20[i].link
+                        diktatBookContainer[i].parentElement.style.display = utsGenap20[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = utsGenap20[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = utsGenap20[i].img
+                }
+                if (a.classList.contains('uas-genap-2020')){
+                        diktatBookContainer[i].parentElement.href = uasGenap20[i].link
+                        diktatBookContainer[i].parentElement.style.display = uasGenap20[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = uasGenap20[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = uasGenap20[i].img
+                }
+                if (a.classList.contains('uts-ganjil-2019')){
+                        diktatBookContainer[i].parentElement.href = utsGanjil19[i].link
+                        diktatBookContainer[i].parentElement.style.display = utsGanjil19[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = utsGanjil19[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = utsGanjil19[i].img
+                }
+                if (a.classList.contains('uas-ganjil-2019')){
+                        diktatBookContainer[i].parentElement.href = uasGanjil19[i].link
+                        diktatBookContainer[i].parentElement.style.display = uasGanjil19[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = uasGanjil19[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = uasGanjil19[i].img
+                }
+                if (a.classList.contains('uts-genap-2019')){
+                        diktatBookContainer[i].parentElement.href = utsGenap19[i].link
+                        diktatBookContainer[i].parentElement.style.display = utsGenap19[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = utsGenap19[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = utsGenap19[i].img
+                }
+                if (a.classList.contains('uas-genap-2019')){
+                        diktatBookContainer[i].parentElement.href = uasGenap19[i].link
+                        diktatBookContainer[i].parentElement.style.display = uasGenap19[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = uasGenap19[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = uasGenap19[i].img
+                }
+                if (a.classList.contains('uts-ganjil-2018')){
+                        diktatBookContainer[i].parentElement.href = utsGanjil18[i].link
+                        diktatBookContainer[i].parentElement.style.display = utsGanjil18[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = utsGanjil18[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = utsGanjil18[i].img
+                }
+                if (a.classList.contains('uas-ganjil-2018')){
+                        diktatBookContainer[i].parentElement.href = uasGanjil18[i].link
+                        diktatBookContainer[i].parentElement.style.display = uasGanjil18[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = uasGanjil18[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = uasGanjil18[i].img
+                }
+                if (a.classList.contains('uts-genap-2018')){
+                        diktatBookContainer[i].parentElement.href = utsGenap18[i].link
+                        diktatBookContainer[i].parentElement.style.display = utsGenap18[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = utsGenap18[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = utsGenap18[i].img
+                }
+                if (a.classList.contains('uas-genap-2018')){
+                        diktatBookContainer[i].parentElement.href = uasGenap18[i].link
+                        diktatBookContainer[i].parentElement.style.display = uasGenap18[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = uasGenap18[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = uasGenap18[i].img
+                }
+                if (a.classList.contains('uts-ganjil-2017')){
+                        diktatBookContainer[i].parentElement.href = utsGanjil17[i].link
+                        diktatBookContainer[i].parentElement.style.display = utsGanjil17[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = utsGanjil17[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = utsGanjil17[i].img
+                }
+                if (a.classList.contains('uas-ganjil-2017')){
+                        diktatBookContainer[i].parentElement.href = uasGanjil17[i].link
+                        diktatBookContainer[i].parentElement.style.display = uasGanjil17[i].display
+                        diktatBookTitle[i].querySelector('h1').textContent = uasGanjil17[i].title.toUpperCase();
+                        diktatBookCover[i].querySelector('img').src = uasGanjil17[i].img
                 }
             }
             anime({
