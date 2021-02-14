@@ -474,6 +474,10 @@ function indexLoaded(e){
     var bidangLogo = document.querySelector('.logbid-logos').querySelectorAll('a');
     let onProgress = false;
 
+    // function bidangLoad (a){
+    //     bidangTitle.textContent = a.
+    // }
+
     bidangLogo.forEach((a) => {
         a.addEventListener('click', (e) => {
             e.preventDefault();
@@ -488,68 +492,71 @@ function indexLoaded(e){
                             bidangDesc.textContent = 'Bidang Komunikasi dan Informasi merupakan bidang pelayanan informasi serta menjalin hubungan baik dengan internal maupun eksternal DTE.';
                             bidangButton.href = '/bidang-template.html'
                             bidangMainLogo.src = 'assets/logbid/kominfo.png';
+                            // localStorage.test = 'kominfo';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-kema')){
+                        if (e.target.parentElement.classList.contains('logbid-kema')){
                             bidangTitle.textContent = 'Kemahasiswaan';
                             bidangDesc.textContent = 'Bidang yang berfungsi untuk membina dan menanamkan nilai-nilai serta softskills dan memiliki fungsi sebagai garda terdepan dalam pembinaan serta koordinator arah gerak kemahasiswaan di Departemen Teknik Elektro.';
                             bidangButton.href = '/bidang-template-kema.html'
                             bidangMainLogo.src = 'assets/logbid/kema.png';
+                            localStorage.test = 'kema';
+
                         }
-                        else if (e.target.parentElement.classList.contains('logbid-kastrat')){
+                        if (e.target.parentElement.classList.contains('logbid-kastrat')){
                             bidangTitle.textContent = 'Kajian dan Aksi Strategis';
                             bidangDesc.textContent = 'Bidang yang berfungsi untuk mengkaji, mencerdaskan, dan mengimplementasikan ilmu kepada warga DTE mengenai isu-isu POLEKSOSBUDHANKAM dan keelektroan yang sedang berkembang.';
                             bidangButton.href = '/bidang-template-kastrat.html'
                             bidangMainLogo.src = 'assets/logbid/kastrat.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-kewirus')){
+                        if (e.target.parentElement.classList.contains('logbid-kewirus')){
                             bidangTitle.textContent = 'Keuangan dan Kewirausahaan';
                             bidangDesc.textContent = 'Bidang yang bertanggung jawab untuk mengatur alir keuangan dan mencari pemasukan dana untuk IME FTUI serta menumbuhkan semangat kewirausahaan warga Departemen Teknik Elektro.';
                             bidangButton.href = '/bidang-template-kewirus.html'
                             bidangMainLogo.src = 'assets/logbid/kewirus.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-kestari')){
+                        if (e.target.parentElement.classList.contains('logbid-kestari')){
                             bidangTitle.textContent = 'Kesekretariatan';
                             bidangDesc.textContent = 'Bidang yang berperan sebagai pusat administrasi dan inventarisasi yang dimiliki oleh lembaga IME FTUI.';
                             bidangButton.href = '/bidang-template-kestari.html'
                             bidangMainLogo.src = 'assets/logbid/kestari.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-kesma')){
+                        if (e.target.parentElement.classList.contains('logbid-kesma')){
                             bidangTitle.textContent = 'Kesejahteraan Mahasiswa';
                             bidangDesc.textContent = 'Bidang di IME FTUI yang bertanggung jawab mengenai advokasi mahasiswa di bidang finansial dan fasilitas.';
                             bidangButton.href = '/bidang-template-kesma.html'
                             bidangMainLogo.src = 'assets/logbid/kesma.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-pengmas')){
+                        if (e.target.parentElement.classList.contains('logbid-pengmas')){
                             bidangTitle.textContent = 'Pengabdian Mahasiswa';
                             bidangDesc.textContent = 'Bidang yang bertanggung jawab untuk mewadahi dan menumbuhkan sikap kepedulian mahasiswa DTE terhadap masyarakat dan lingkungan hidup, dengan berhubungan serta menyalurkan core competence DTE kepada masyarakat.';
                             bidangButton.href = '/bidang-template-pengmas.html'
                             bidangMainLogo.src = 'assets/logbid/pengmas.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-litbang')){
+                        if (e.target.parentElement.classList.contains('logbid-litbang')){
                             bidangTitle.textContent = 'Penelitian dan Pengembangan';
                             bidangDesc.textContent = 'Bidang penelitian dan pengembangan adalah bidang internal IME FTUI yang bertindak sebagai Analisator, evaluator, dan konsultan IME FTUI.';
                             bidangButton.href = '/bidang-template-litbang.html'
                             bidangMainLogo.src = 'assets/logbid/litbang.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-retro')){
+                        if (e.target.parentElement.classList.contains('logbid-retro')){
                             bidangTitle.textContent = 'Rohani Islam Elektro';
                             bidangDesc.textContent = 'Bidang yang berfungsi untuk melakukan pewadahan serta menuansakan suasana keislaman di Departemen Teknik Elektro.';
                             bidangButton.href = '/bidang-template-retro.html'
                             bidangMainLogo.src = 'assets/logbid/retro.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-piptek')){
+                        if (e.target.parentElement.classList.contains('logbid-piptek')){
                             bidangTitle.textContent = 'Pengembangan Ilmu Pengetahuan dan Teknologi';
                             bidangDesc.textContent = 'Bidang di yang mewadahi dan mengembangkan minat dan bakat warga Departemen Teknik Elektro dalam ilmu pengetahuan dan teknologi.';
                             bidangButton.href = '/bidang-template-piptek.html'
                             bidangMainLogo.src = 'assets/logbid/piptek.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-siwa')){
+                        if (e.target.parentElement.classList.contains('logbid-siwa')){
                             bidangTitle.textContent = 'Kreasi Mahasiswa';
                             bidangDesc.textContent = 'Bidang yang mewadahi warga Departemen Teknik Elektro pada bidang seni dan olahraga. Bidang ini bertanggung jawab untuk mengembangkan bakat warga dengan menciptakan suasana bersenang-senang.';
                             bidangButton.href = '/bidang-template-siwa.html'
                             bidangMainLogo.src = 'assets/logbid/siwa.png';
                         } 
-                        else if (e.target.parentElement.classList.contains('logbid-akpro')){
+                        if (e.target.parentElement.classList.contains('logbid-akpro')){
                             bidangTitle.textContent = 'Akademis dan Keprofesian';
                             bidangDesc.textContent = 'Bidang yang mengadvokasi dan memfasilitasi warga Departemen Teknik Elektro dalam hal akademis dan pasca kampus.';
                             bidangButton.href = '/bidang-template-akpro.html'
@@ -838,6 +845,7 @@ function misiUpAppear(e){
 
 //  bidang-template.html //
 function bidangLoaded(e){
+    console.log(localStorage.test)
     anime.timeline({
         easing: 'easeOutExpo',
         complete: () => {
@@ -1299,6 +1307,14 @@ function diktatLoaded(e){
     var diktatBookTitle = document.querySelectorAll('.diktat-book-title');
     var diktatBookCover = document.querySelectorAll('.diktat-cover');
     
+    function diktatRefresh (x, y){
+        for (let i = 0; i <= 14; i++){
+            y.parentElement.nextElementSibling.querySelectorAll('a')[i].text = x[i].title;
+            y.parentElement.nextElementSibling.querySelectorAll('a')[i].href = x[i].link;
+            y.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = x[i].display;
+        }
+    }
+
     diktatBookContainer.forEach((a) => {
         a.parentElement.target = '_blank';
     })
@@ -1309,167 +1325,102 @@ function diktatLoaded(e){
     })
 
     document.querySelectorAll('.diktat-link-header').forEach((a) => {
-        for (let i = 0; i <= 14; i++){
-            if (a.classList.contains('uts-ganjil-2020')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGanjil20[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGanjil20[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGanjil20[i].display;
-            }
-            if (a.classList.contains('uas-ganjil-2020')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGanjil20[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGanjil20[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGanjil20[i].display;
-            }
-            if (a.classList.contains('uts-genap-2020')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGenap20[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGenap20[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGenap20[i].display;
-            }
-            if (a.classList.contains('uas-genap-2020')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGenap20[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGenap20[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGenap20[i].display;
-            }
-            if (a.classList.contains('uts-ganjil-2019')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGanjil19[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGanjil19[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGanjil19[i].display;
-            }
-            if (a.classList.contains('uas-ganjil-2019')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGanjil19[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGanjil19[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGanjil19[i].display;
-            }
-            if (a.classList.contains('uts-genap-2019')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGenap19[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGenap19[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGenap19[i].display;
-            }
-            if (a.classList.contains('uas-genap-2019')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGenap19[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGenap19[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGenap19[i].display;
-            }
-            if (a.classList.contains('uts-ganjil-2018')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGanjil18[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGanjil18[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGanjil18[i].display;
-            }
-            if (a.classList.contains('uas-ganjil-2018')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGanjil18[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGanjil18[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGanjil18[i].display;
-            }
-            if (a.classList.contains('uts-genap-2018')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGenap18[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGenap18[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGenap18[i].display;
-            }
-            if (a.classList.contains('uas-genap-2018')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGenap18[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGenap18[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGenap18[i].display;
-            }
-            if (a.classList.contains('uts-ganjil-2017')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = utsGanjil17[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = utsGanjil17[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = utsGanjil17[i].display;
-            }
-            if (a.classList.contains('uas-ganjil-2017')){
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].text = uasGanjil17[i].title;
-                a.parentElement.nextElementSibling.querySelectorAll('a')[i].href = uasGanjil17[i].link;
-                a.parentElement.nextElementSibling.querySelectorAll('li')[i].style.display = uasGanjil17[i].display;
-            }
+        if (a.classList.contains('uts-ganjil-2020')){
+            diktatRefresh(utsGanjil20, a)
+        }
+        if (a.classList.contains('uas-ganjil-2020')){
+            diktatRefresh(uasGanjil20, a)
+        }
+        if (a.classList.contains('uts-genap-2020')){
+            diktatRefresh(utsGenap20, a)
+        }
+        if (a.classList.contains('uas-genap-2020')){
+            diktatRefresh(uasGenap20, a)
+        }
+        if (a.classList.contains('uts-ganjil-2019')){
+            diktatRefresh(utsGanjil19, a)
+        }
+        if (a.classList.contains('uas-ganjil-2019')){
+            diktatRefresh(uasGanjil19, a)
+        }
+        if (a.classList.contains('uts-genap-2019')){
+            diktatRefresh(utsGenap19, a)
+        }
+        if (a.classList.contains('uas-genap-2019')){
+            diktatRefresh(uasGenap19, a)
+        }
+        if (a.classList.contains('uts-ganjil-2018')){
+            diktatRefresh(utsGanjil18, a)
+        }
+        if (a.classList.contains('uas-ganjil-2018')){
+            diktatRefresh(uasGanjil18, a)
+        }
+        if (a.classList.contains('uts-genap-2018')){
+            diktatRefresh(utsGenap18, a)
+        }
+        if (a.classList.contains('uas-genap-2018')){
+            diktatRefresh(uasGenap18, a)
+        }
+        if (a.classList.contains('uts-ganjil-2017')){
+            diktatRefresh(utsGanjil17, a)
+        }
+        if (a.classList.contains('uas-ganjil-2017')){
+            diktatRefresh(uasGanjil17, a)
         }
     })
 
+    function diktatBookRefresh (x){
+        for (let i = 0; i <= 14; i++){
+            diktatBookContainer[i].parentElement.href = x[i].link
+            diktatBookContainer[i].parentElement.style.display = x[i].display
+            diktatBookTitle[i].querySelector('h1').textContent = x[i].title.toUpperCase();
+            diktatBookCover[i].querySelector('img').src = x[i].img
+        }
+    }
+    
     document.querySelectorAll('.diktat-link-header').forEach((a) => {
         a.addEventListener('click', () => {
-            for (let i = 0; i <= 14; i++){
-                if (a.classList.contains('uts-ganjil-2020')){
-                    diktatBookContainer[i].parentElement.href = utsGanjil20[i].link
-                    diktatBookContainer[i].parentElement.style.display = utsGanjil20[i].display
-                    diktatBookTitle[i].querySelector('h1').textContent = utsGanjil20[i].title.toUpperCase();
-                    diktatBookCover[i].querySelector('img').src = utsGanjil20[i].img
-                }
-                if (a.classList.contains('uas-ganjil-2020')){
-                        diktatBookContainer[i].parentElement.href = uasGanjil20[i].link
-                        diktatBookContainer[i].parentElement.style.display = uasGanjil20[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = uasGanjil20[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = uasGanjil20[i].img
-                }
-                if (a.classList.contains('uts-genap-2020')){
-                        diktatBookContainer[i].parentElement.href = utsGenap20[i].link
-                        diktatBookContainer[i].parentElement.style.display = utsGenap20[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = utsGenap20[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = utsGenap20[i].img
-                }
-                if (a.classList.contains('uas-genap-2020')){
-                        diktatBookContainer[i].parentElement.href = uasGenap20[i].link
-                        diktatBookContainer[i].parentElement.style.display = uasGenap20[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = uasGenap20[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = uasGenap20[i].img
-                }
-                if (a.classList.contains('uts-ganjil-2019')){
-                        diktatBookContainer[i].parentElement.href = utsGanjil19[i].link
-                        diktatBookContainer[i].parentElement.style.display = utsGanjil19[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = utsGanjil19[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = utsGanjil19[i].img
-                }
-                if (a.classList.contains('uas-ganjil-2019')){
-                        diktatBookContainer[i].parentElement.href = uasGanjil19[i].link
-                        diktatBookContainer[i].parentElement.style.display = uasGanjil19[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = uasGanjil19[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = uasGanjil19[i].img
-                }
-                if (a.classList.contains('uts-genap-2019')){
-                        diktatBookContainer[i].parentElement.href = utsGenap19[i].link
-                        diktatBookContainer[i].parentElement.style.display = utsGenap19[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = utsGenap19[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = utsGenap19[i].img
-                }
-                if (a.classList.contains('uas-genap-2019')){
-                        diktatBookContainer[i].parentElement.href = uasGenap19[i].link
-                        diktatBookContainer[i].parentElement.style.display = uasGenap19[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = uasGenap19[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = uasGenap19[i].img
-                }
-                if (a.classList.contains('uts-ganjil-2018')){
-                        diktatBookContainer[i].parentElement.href = utsGanjil18[i].link
-                        diktatBookContainer[i].parentElement.style.display = utsGanjil18[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = utsGanjil18[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = utsGanjil18[i].img
-                }
-                if (a.classList.contains('uas-ganjil-2018')){
-                        diktatBookContainer[i].parentElement.href = uasGanjil18[i].link
-                        diktatBookContainer[i].parentElement.style.display = uasGanjil18[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = uasGanjil18[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = uasGanjil18[i].img
-                }
-                if (a.classList.contains('uts-genap-2018')){
-                        diktatBookContainer[i].parentElement.href = utsGenap18[i].link
-                        diktatBookContainer[i].parentElement.style.display = utsGenap18[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = utsGenap18[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = utsGenap18[i].img
-                }
-                if (a.classList.contains('uas-genap-2018')){
-                        diktatBookContainer[i].parentElement.href = uasGenap18[i].link
-                        diktatBookContainer[i].parentElement.style.display = uasGenap18[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = uasGenap18[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = uasGenap18[i].img
-                }
-                if (a.classList.contains('uts-ganjil-2017')){
-                        diktatBookContainer[i].parentElement.href = utsGanjil17[i].link
-                        diktatBookContainer[i].parentElement.style.display = utsGanjil17[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = utsGanjil17[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = utsGanjil17[i].img
-                }
-                if (a.classList.contains('uas-ganjil-2017')){
-                        diktatBookContainer[i].parentElement.href = uasGanjil17[i].link
-                        diktatBookContainer[i].parentElement.style.display = uasGanjil17[i].display
-                        diktatBookTitle[i].querySelector('h1').textContent = uasGanjil17[i].title.toUpperCase();
-                        diktatBookCover[i].querySelector('img').src = uasGanjil17[i].img
-                }
+            if (a.classList.contains('uts-ganjil-2020')){
+                diktatBookRefresh(utsGanjil20)
+            }
+            if (a.classList.contains('uas-ganjil-2020')){
+                diktatBookRefresh(uasGanjil20)
+            }
+            if (a.classList.contains('uts-genap-2020')){
+                diktatBookRefresh(utsGenap20)
+            }
+            if (a.classList.contains('uas-genap-2020')){
+                diktatBookRefresh(uasGenap20)
+            }
+            if (a.classList.contains('uts-ganjil-2019')){
+                diktatBookRefresh(utsGanjil19)
+            }
+            if (a.classList.contains('uas-ganjil-2019')){
+                diktatBookRefresh(uasGanjil19)
+            }
+            if (a.classList.contains('uts-genap-2019')){
+                diktatBookRefresh(utsGenap19)
+            }
+            if (a.classList.contains('uas-genap-2019')){
+                diktatBookRefresh(uasGenap19)
+            }
+            if (a.classList.contains('uts-ganjil-2018')){
+                diktatBookRefresh(utsGanjil18)
+            }
+            if (a.classList.contains('uas-ganjil-2018')){
+                diktatBookRefresh(uasGanjil18)
+            }
+            if (a.classList.contains('uts-genap-2018')){
+                diktatBookRefresh(utsGenap18)
+            }
+            if (a.classList.contains('uas-genap-2018')){
+                diktatBookRefresh(uasGenap18)
+            }
+            if (a.classList.contains('uts-ganjil-2017')){
+                diktatBookRefresh(utsGanjil17)
+            }
+            if (a.classList.contains('uas-ganjil-2017')){
+                diktatBookRefresh(uasGanjil17)
             }
             anime({
                 targets: diktatBookContainer,

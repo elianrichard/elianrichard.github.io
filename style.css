@@ -37,7 +37,7 @@
 
 /* settings */
 .body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 .blue{
     color: var(--blue) !important;
