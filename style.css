@@ -899,6 +899,11 @@ body {
         font-size: 0.6rem;
     }
 }
+@media only screen and (max-height: 700px){
+    .misi-card p{
+        font-size: 0.5rem;
+    }
+}
 
 @media only screen and (max-height: 600px){
     .misi-card p{
