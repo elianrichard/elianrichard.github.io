@@ -659,10 +659,19 @@ function aboutLoaded(e){
         }, '-=1600')
         .add(navAnimate);
     }
-    document.getElementById('visi').addEventListener('mouseover', visiAppear);
-    document.getElementById('misi').addEventListener('mouseover', misiAppear);
-    document.getElementById('visi').addEventListener('mouseout', visiDisappear);
-    document.getElementById('misi').addEventListener('mouseout', misiDisappear);
+    
+    if (window.innerHeight < 600) {
+        document.getElementById('visi').addEventListener('click', visiAppear);
+        document.getElementById('misi').addEventListener('click', misiAppear);
+        document.querySelector('.visi-card').addEventListener('click', visiDisappear);
+        document.querySelector('.misi-card').addEventListener('click', misiDisappear);
+    } else {
+        document.getElementById('visi').addEventListener('mouseover', visiAppear);
+        document.getElementById('misi').addEventListener('mouseover', misiAppear);
+        document.getElementById('visi').addEventListener('mouseout', visiDisappear);
+        document.getElementById('misi').addEventListener('mouseout', misiDisappear);
+    }
+
 }
 // Visi Misi Section
 function visiAppear(e){
