@@ -1002,6 +1002,7 @@ body {
     -webkit-transition: 0.5s all ease;
     transition: 0.5s all ease;
     overflow: hidden;
+    opacity: 0;
 }
 .bidang-foto img{
     width: 300px;
@@ -1159,6 +1160,9 @@ body {
     align-items: center;
     position: relative;
 }
+.video-bidang-title{
+    opacity: 0;
+}
 .video-bidang-title h1{
     text-align: right;
 }
@@ -1170,10 +1174,11 @@ body {
     overflow: hidden;
     border-radius: 30px;
     box-shadow: 4px 4px 10px 0 rgba(1, 84, 107, 0.4);
+    opacity: 0;
 }
 .video-background{
     background-color: var(--red);
-    height: 100%;
+    height: 0%;
     width: 30%;
     position: absolute;
     left: 0;
@@ -1236,6 +1241,7 @@ body {
 }
 .bph-container{
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 .bph-container h1{
@@ -1248,6 +1254,12 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding-top: 1rem;
+}
+.bph-text{
+    opacity: 0;
+}
+.sa-text{
+    opacity: 0;
 }
 .bph{
     width: 28%;
@@ -1266,6 +1278,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 0.5rem;
+    transform: scale(0, 0);
 }
 .bph-foto-wadah{
     display: flex;
@@ -1314,6 +1327,10 @@ body {
 }
 
 /* Foto BP */
+.bp-container-cut{
+    width: 80%;
+    margin: auto;
+}
 .bp-container{
     display: flex;
     flex-direction: column;
@@ -1335,12 +1352,19 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.bp-nama{
+    opacity: 0;
+}
+.bp-text{
+    opacity: 0;
+}
 .bp-foto{
-    width: 70%;
-    /* height: 125px; */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: var(--yellow);
     margin-bottom: 0.5rem;
+    transform: scale(0, 0);
 }
 .bp-foto img{
     width: 100%;
@@ -1349,9 +1373,16 @@ body {
 }
 
 @media only screen and (max-width: 768px){
+    .bp-container-cut{
+        width: 90%;
+    }
     .bp{
         width: 29%;
         margin: 0 3px;
+    }
+    .bp-foto{
+        width: 15vw;
+        height: 15vw;
     }
     .bp-container h1{
         font-size: 24px;

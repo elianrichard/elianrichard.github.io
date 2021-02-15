@@ -474,10 +474,11 @@ function indexLoaded(e){
     var bidangLogo = document.querySelector('.logbid-logos').querySelectorAll('a');
     let onProgress = false;
 
-    // function bidangLoad (a){
-    //     bidangTitle.textContent = a.
-    // }
-
+    function bidangLoadLanding (a){
+        bidangTitle.textContent = a.namaBidang;
+        bidangDesc.textContent = a.deskripsiBidang;
+        bidangMainLogo.src = a.logoBidang;
+    }
     bidangLogo.forEach((a) => {
         a.addEventListener('click', (e) => {
             e.preventDefault();
@@ -488,79 +489,52 @@ function indexLoaded(e){
                     complete: () => {
                         bidangButton.style.display = 'inline-block';
                         if (e.target.parentElement.classList.contains('logbid-kominfo')){
-                            bidangTitle.textContent = 'Komunikasi dan Informasi';
-                            bidangDesc.textContent = 'Bidang Komunikasi dan Informasi merupakan bidang pelayanan informasi serta menjalin hubungan baik dengan internal maupun eksternal DTE.';
-                            bidangButton.href = '/bidang-template.html'
-                            bidangMainLogo.src = 'assets/logbid/kominfo.png';
-                            // localStorage.test = 'kominfo';
+                            bidangLoadLanding(bidangKominfo);
+                            localStorage.selectedBidang = 'kominfo';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-kema')){
-                            bidangTitle.textContent = 'Kemahasiswaan';
-                            bidangDesc.textContent = 'Bidang yang berfungsi untuk membina dan menanamkan nilai-nilai serta softskills dan memiliki fungsi sebagai garda terdepan dalam pembinaan serta koordinator arah gerak kemahasiswaan di Departemen Teknik Elektro.';
-                            bidangButton.href = '/bidang-template-kema.html'
-                            bidangMainLogo.src = 'assets/logbid/kema.png';
-                            localStorage.test = 'kema';
-
+                            bidangLoadLanding(bidangKema);
+                            localStorage.selectedBidang = 'kema';
                         }
                         if (e.target.parentElement.classList.contains('logbid-kastrat')){
-                            bidangTitle.textContent = 'Kajian dan Aksi Strategis';
-                            bidangDesc.textContent = 'Bidang yang berfungsi untuk mengkaji, mencerdaskan, dan mengimplementasikan ilmu kepada warga DTE mengenai isu-isu POLEKSOSBUDHANKAM dan keelektroan yang sedang berkembang.';
-                            bidangButton.href = '/bidang-template-kastrat.html'
-                            bidangMainLogo.src = 'assets/logbid/kastrat.png';
+                            bidangLoadLanding(bidangKastrat);
+                            localStorage.selectedBidang = 'kastrat';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-kewirus')){
-                            bidangTitle.textContent = 'Keuangan dan Kewirausahaan';
-                            bidangDesc.textContent = 'Bidang yang bertanggung jawab untuk mengatur alir keuangan dan mencari pemasukan dana untuk IME FTUI serta menumbuhkan semangat kewirausahaan warga Departemen Teknik Elektro.';
-                            bidangButton.href = '/bidang-template-kewirus.html'
-                            bidangMainLogo.src = 'assets/logbid/kewirus.png';
+                            bidangLoadLanding(bidangKewirus);
+                            localStorage.selectedBidang = 'kewirus';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-kestari')){
-                            bidangTitle.textContent = 'Kesekretariatan';
-                            bidangDesc.textContent = 'Bidang yang berperan sebagai pusat administrasi dan inventarisasi yang dimiliki oleh lembaga IME FTUI.';
-                            bidangButton.href = '/bidang-template-kestari.html'
-                            bidangMainLogo.src = 'assets/logbid/kestari.png';
+                            bidangLoadLanding(bidangKestari);
+                            localStorage.selectedBidang = 'kestari';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-kesma')){
-                            bidangTitle.textContent = 'Kesejahteraan Mahasiswa';
-                            bidangDesc.textContent = 'Bidang di IME FTUI yang bertanggung jawab mengenai advokasi mahasiswa di bidang finansial dan fasilitas.';
-                            bidangButton.href = '/bidang-template-kesma.html'
-                            bidangMainLogo.src = 'assets/logbid/kesma.png';
+                            bidangLoadLanding(bidangKesma);
+                            localStorage.selectedBidang = 'kesma';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-pengmas')){
-                            bidangTitle.textContent = 'Pengabdian Mahasiswa';
-                            bidangDesc.textContent = 'Bidang yang bertanggung jawab untuk mewadahi dan menumbuhkan sikap kepedulian mahasiswa DTE terhadap masyarakat dan lingkungan hidup, dengan berhubungan serta menyalurkan core competence DTE kepada masyarakat.';
-                            bidangButton.href = '/bidang-template-pengmas.html'
-                            bidangMainLogo.src = 'assets/logbid/pengmas.png';
+                            bidangLoadLanding(bidangPengmas);
+                            localStorage.selectedBidang = 'pengmas';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-litbang')){
-                            bidangTitle.textContent = 'Penelitian dan Pengembangan';
-                            bidangDesc.textContent = 'Bidang penelitian dan pengembangan adalah bidang internal IME FTUI yang bertindak sebagai Analisator, evaluator, dan konsultan IME FTUI.';
-                            bidangButton.href = '/bidang-template-litbang.html'
-                            bidangMainLogo.src = 'assets/logbid/litbang.png';
+                            bidangLoadLanding(bidangLitbang);
+                            localStorage.selectedBidang = 'litbang';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-retro')){
-                            bidangTitle.textContent = 'Rohani Islam Elektro';
-                            bidangDesc.textContent = 'Bidang yang berfungsi untuk melakukan pewadahan serta menuansakan suasana keislaman di Departemen Teknik Elektro.';
-                            bidangButton.href = '/bidang-template-retro.html'
-                            bidangMainLogo.src = 'assets/logbid/retro.png';
+                            bidangLoadLanding(bidangRetro);
+                            localStorage.selectedBidang = 'retro';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-piptek')){
-                            bidangTitle.textContent = 'Pengembangan Ilmu Pengetahuan dan Teknologi';
-                            bidangDesc.textContent = 'Bidang di yang mewadahi dan mengembangkan minat dan bakat warga Departemen Teknik Elektro dalam ilmu pengetahuan dan teknologi.';
-                            bidangButton.href = '/bidang-template-piptek.html'
-                            bidangMainLogo.src = 'assets/logbid/piptek.png';
+                            bidangLoadLanding(bidangPiptek);
+                            localStorage.selectedBidang = 'piptek';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-siwa')){
-                            bidangTitle.textContent = 'Kreasi Mahasiswa';
-                            bidangDesc.textContent = 'Bidang yang mewadahi warga Departemen Teknik Elektro pada bidang seni dan olahraga. Bidang ini bertanggung jawab untuk mengembangkan bakat warga dengan menciptakan suasana bersenang-senang.';
-                            bidangButton.href = '/bidang-template-siwa.html'
-                            bidangMainLogo.src = 'assets/logbid/siwa.png';
+                            bidangLoadLanding(bidangSiwa);
+                            localStorage.selectedBidang = 'siwa';
                         } 
                         if (e.target.parentElement.classList.contains('logbid-akpro')){
-                            bidangTitle.textContent = 'Akademis dan Keprofesian';
-                            bidangDesc.textContent = 'Bidang yang mengadvokasi dan memfasilitasi warga Departemen Teknik Elektro dalam hal akademis dan pasca kampus.';
-                            bidangButton.href = '/bidang-template-akpro.html'
-                            bidangMainLogo.src = 'assets/logbid/akpro.png';
+                            bidangLoadLanding(bidangAkpro);
+                            localStorage.selectedBidang = 'akpro';
                         }
                     }
                 }).add({
@@ -845,12 +819,12 @@ function misiUpAppear(e){
 
 //  bidang-template.html //
 function bidangLoaded(e){
-    console.log(localStorage.test)
     anime.timeline({
         easing: 'easeOutExpo',
         complete: () => {
             document.querySelectorAll('.bidang-foto').forEach((a) => {
                 a.removeAttribute('style');
+                a.style.opacity = '1';
             })
         }
     })
@@ -882,6 +856,146 @@ function bidangLoaded(e){
         },
     })
     .add(navAnimate);
+    
+    //Scroll Animation
+    window.addEventListener('scroll', () => {
+        var videoBidangPosition = document.querySelector('.video-bidang').getBoundingClientRect().top;
+        var bphSaContainerPosition = document.querySelector('.bph-sa-container').getBoundingClientRect().top;
+        var bpContainerPosition = document.querySelector('.bp-container').getBoundingClientRect().top;
+        var screenHeight = window.innerHeight;
+
+        if (videoBidangPosition < screenHeight / 1.3){
+            if (!(document.querySelector('.video-bidang').classList.contains('active'))){
+                document.querySelector('.video-bidang').classList.add('active');
+                anime.timeline({
+                    easing: 'easeOutExpo',
+                }).add({
+                    targets: document.querySelector('.video-bidang-title'), 
+                    translateX: ['-100', '0'],
+                    opacity: ['0', '1'],
+                    duration: 1000,
+                }).add({
+                    targets: document.querySelector('.video-background'),
+                    height: ['0%','100%'],
+                    opacity: ['0', '1'],
+                    duration: 1000,
+                }, '-=500').add({
+                    targets: document.querySelector('.video-bidang'),
+                    translateX: ['-100', '0'],
+                    opacity: ['0', '1'],
+                    duration: 1000,
+                }, '-=500')
+            }
+        }
+        if (bphSaContainerPosition < screenHeight / 1.5){
+            if (!(document.querySelector('.bph-sa-container').classList.contains('active'))){
+                document.querySelector('.bph-sa-container').classList.add('active');
+                anime.timeline({
+                }).add({
+                    targets: document.querySelector('.bph-text'), 
+                    opacity: ['0', '1'],
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                }).add({
+                    targets: document.querySelector('.sa-text'),
+                    opacity: ['0', '1'],
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                }, '-=900').add({
+                    targets: document.querySelectorAll('.bph-foto'),
+                    scale: [0, 1],
+                    delay: (el, i) => {
+                        return i*100;
+                    },
+                }, '-=900').add({
+                    targets: document.querySelectorAll('.bph-nama'),
+                    translateY: ['50', '0'],
+                    opacity: ['0', '1'],
+                    delay: (el, i) => {
+                        return i*100;
+                    }
+                }, '-=500').add({
+                    targets: document.querySelectorAll('.bph-jabatan'),
+                    translateY: ['50', '0'],
+                    opacity: ['0', '1'],
+                    delay: (el, i) => {
+                        return (i*100);
+                    }
+                }, '-=1000')
+            }
+        }
+        if (bpContainerPosition < screenHeight / 1.5){
+            if (!(document.querySelector('.bp-container').classList.contains('active'))){
+                document.querySelector('.bp-container').classList.add('active');
+                anime.timeline({
+                }).add({
+                    targets: document.querySelectorAll('.bp-foto'),
+                    scale: [0, 1],
+                    delay: (el, i) => {
+                        return (i*100);
+                    }
+                }).add({
+                    targets: document.querySelectorAll('.bp-nama'),
+                    opacity: [0, 1],
+                    translateY: ['50', '0'],
+                    delay: (el, i) => {
+                        return (i*100);
+                    }
+                }, '-=900')
+            }
+        }
+    })
+    
+
+    //CONTENT CHANGE
+    console.log(localStorage.selectedBidang)
+    function bidangContentLoad (x){
+        document.querySelector('.bidang-logo').querySelector('img').src = x.logoBidang
+        document.querySelector('.bidang-title').querySelector('h1').textContent = x.namaBidang;
+        document.querySelector('.proker').textContent = x.programKerja;
+        for (let i = 0; i <= 9; i++){
+            document.querySelectorAll('.bidang-foto')[i].querySelector('img').src = x.fotoBidang[i]
+        };
+        document.querySelector('.video-bidang-nickname').textContent = `${x.bidangNickname.toUpperCase()}!`;
+        document.querySelector('.video-bidang').querySelector('iframe').src = x.videoBidang;
+        for (let i = 0; i <= 5; i++){
+            document.querySelectorAll('.bph-nama')[i].textContent = x.namaBPH[i].nama;
+            document.querySelectorAll('.bph')[i].style.display = x.namaBPH[i].display;
+            document.querySelectorAll('.bph-jabatan')[i].textContent = x.namaBPH[i].jabatan;
+            document.querySelectorAll('.bph-foto-wadah')[i].querySelector('img').src = x.namaBPH[i].foto;
+        }
+        for (let i = 0; i <= 15; i++){
+            document.querySelectorAll('.bp-nama')[i].textContent = x.namaBP[i].nama;
+            document.querySelectorAll('.bp-foto')[i].querySelector('img').src = x.namaBP[i].foto;
+            document.querySelectorAll('.bp')[i].style.display = x.namaBP[i].display;
+        }
+    }
+
+    if (localStorage.selectedBidang === 'kominfo'){
+        bidangContentLoad (bidangKominfo);
+    } else if (localStorage.selectedBidang === 'kema'){
+        bidangContentLoad (bidangKema);
+    } else if (localStorage.selectedBidang === 'kastrat'){
+        bidangContentLoad (bidangKastrat);
+    } else if (localStorage.selectedBidang === 'kewirus'){
+        bidangContentLoad (bidangKewirus);
+    } else if (localStorage.selectedBidang === 'kestari'){
+        bidangContentLoad (bidangKestari);
+    } else if (localStorage.selectedBidang === 'kesma'){
+        bidangContentLoad (bidangKesma);
+    } else if (localStorage.selectedBidang === 'pengmas'){
+        bidangContentLoad (bidangPengmas);
+    } else if (localStorage.selectedBidang === 'litbang'){
+        bidangContentLoad (bidangLitbang);
+    } else if (localStorage.selectedBidang === 'retro'){
+        bidangContentLoad (bidangRetro);
+    } else if (localStorage.selectedBidang === 'piptek'){
+        bidangContentLoad (bidangPiptek);
+    } else if (localStorage.selectedBidang === 'siwa'){
+        bidangContentLoad (bidangSiwa);
+    } else if (localStorage.selectedBidang === 'akpro'){
+        bidangContentLoad (bidangAkpro);
+    }
 
     //MODAL
     var fotoBidang = document.querySelectorAll('.bidang-foto');
@@ -987,105 +1101,166 @@ function bidangLoaded(e){
         }
     })
 
-
     // LOGO BIDANG DI BIDANG TEMPLATE
     var bidangTitle = document.querySelector('.logbid-bidang-title');
     var bidangMainLogo = document.querySelector('.logbid-bidang-logo');
     var bidangLogo = document.querySelector('.logbid-logos').querySelectorAll('img');
+    let onFade = false;
     let currentLogo;
+    function bidangLoadTemplate (x, y){
+        bidangTitle.textContent = x.namaBidang;
+        bidangMainLogo.src = x.logoBidang;
+        currentLogo = y.target.parentElement.className;
+    }
+
     bidangLogo.forEach((a) => {
         a.addEventListener('mouseover', (e) => {
-            if (!(currentLogo === e.target.parentElement.className)){
-                anime.timeline({
-                    easing: 'easeOutQuad',
-                    complete: () => {
-                        if (e.target.parentElement.classList.contains('logbid-kominfo')){
-                            bidangTitle.textContent = 'Komunikasi dan Informasi';
-                            bidangMainLogo.src = 'assets/logbid/kominfo.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-kema')){
-                            bidangTitle.textContent = 'Kemahasiswaan';
-                            bidangMainLogo.src = 'assets/logbid/kema.png';
-                            currentLogo = e.target.parentElement.className;
-                        }
-                        else if (e.target.parentElement.classList.contains('logbid-kastrat')){
-                            bidangTitle.textContent = 'Kajian dan Aksi Strategis';
-                            bidangMainLogo.src = 'assets/logbid/kastrat.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-kewirus')){
-                            bidangTitle.textContent = 'Keuangan dan Kewirausahaan';
-                            bidangMainLogo.src = 'assets/logbid/kewirus.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-kestari')){
-                            bidangTitle.textContent = 'Kesekretariatan';
-                            bidangMainLogo.src = 'assets/logbid/kestari.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-kesma')){
-                            bidangTitle.textContent = 'Kesejahteraan Mahasiswa';
-                            bidangMainLogo.src = 'assets/logbid/kesma.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-pengmas')){
-                            bidangTitle.textContent = 'Pengabdian Mahasiswa';
-                            bidangMainLogo.src = 'assets/logbid/pengmas.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-litbang')){
-                            bidangTitle.textContent = 'Penelitian dan Pengembangan';
-                            bidangMainLogo.src = 'assets/logbid/litbang.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-retro')){
-                            bidangTitle.textContent = 'Rohani Islam Elektro';
-                            bidangMainLogo.src = 'assets/logbid/retro.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-piptek')){
-                            bidangTitle.textContent = 'Pengembangan Ilmu Pengetahuan dan Teknologi';
-                            bidangMainLogo.src = 'assets/logbid/piptek.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-siwa')){
-                            bidangTitle.textContent = 'Kreasi Mahasiswa';
-                            bidangMainLogo.src = 'assets/logbid/siwa.png';
-                            currentLogo = e.target.parentElement.className;
-                        } 
-                        else if (e.target.parentElement.classList.contains('logbid-akpro')){
-                            bidangTitle.textContent = 'Akademis dan Keprofesian';
-                            bidangMainLogo.src = 'assets/logbid/akpro.png';
-                            currentLogo = e.target.parentElement.className;
-                        }
-                    }
-                }).add({
-                    targets: bidangMainLogo.parentElement,
-                    opacity: [1, 0],
-                    duration: 400,
-                }).add({
-                    targets: bidangTitle,
-                    opacity: [1, 0],
-                    duration: 400,
-                }, '-=400')
-    
-                setTimeout(() => {
+            if (!onFade){
+                if (!(currentLogo === e.target.parentElement.className)){
+                    onFade = true;
                     anime.timeline({
                         easing: 'easeOutQuad',
+                        complete: () => {
+                            if (e.target.parentElement.classList.contains('logbid-kominfo')){
+                                bidangLoadTemplate(bidangKominfo, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-kema')){
+                                bidangLoadTemplate(bidangKema, e);
+                            }
+                            else if (e.target.parentElement.classList.contains('logbid-kastrat')){
+                                bidangLoadTemplate(bidangKastrat, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-kewirus')){
+                                bidangLoadTemplate(bidangKewirus, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-kestari')){
+                                bidangLoadTemplate(bidangKestari, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-kesma')){
+                                bidangLoadTemplate(bidangKesma, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-pengmas')){
+                                bidangLoadTemplate(bidangPengmas, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-litbang')){
+                                bidangLoadTemplate(bidangLitbang, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-retro')){
+                                bidangLoadTemplate(bidangRetro, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-piptek')){
+                                bidangLoadTemplate(bidangPiptek, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-siwa')){
+                                bidangLoadTemplate(bidangSiwa, e);
+                            } 
+                            else if (e.target.parentElement.classList.contains('logbid-akpro')){
+                                bidangLoadTemplate(bidangAkpro, e);
+                            }
+                            anime.timeline({
+                                easing: 'easeOutExpo',
+                            }).add({
+                                targets: bidangMainLogo.parentElement,
+                                opacity: [0, 1],
+                                duration: 100,
+                            }).add({
+                                targets: bidangTitle,
+                                opacity: [0, 1],
+                                duration: 100,
+                            })
+                            onFade = false;
+                        }
                     }).add({
                         targets: bidangMainLogo.parentElement,
-                        opacity: [0, 1],
-                        duration: 400,
+                        opacity: [1, 0],
+                        duration: 100,
                     }).add({
                         targets: bidangTitle,
-                        opacity: [0, 1],
-                        duration: 400,
-                    }, '-=200');
-                }, 400)
+                        opacity: [1, 0],
+                        duration: 100,
+                    }, '-=100')
+                }
             }
         })
     })
+    // var classArray = ['.bidang-logo img', '.bidang-title', '.bidang-proker', '']
+
+    //bidangRefresh
+    document.querySelector('.logbid-logos').querySelectorAll('a').forEach((a) => {
+        a.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: "smooth"});
+            // document.querySelector('.video-bidang').classList.remove('active');
+            // document.querySelector('.bph-sa-container').classList.remove('active');
+            // document.querySelector('.bp-container').classList.remove('active');
+
+            anime.timeline({
+                easing: 'easeOutExpo',
+                complete: () => {
+                    if (a.classList.contains('logbid-kominfo')){
+                        bidangContentLoad (bidangKominfo);
+                        localStorage.selectedBidang = 'kominfo';
+                    } 
+                    else if (a.classList.contains('logbid-kema')){
+                        bidangContentLoad (bidangKema);
+                        localStorage.selectedBidang = 'kema';
+                    }
+                    else if (a.classList.contains('logbid-kastrat')){
+                        bidangContentLoad (bidangKastrat);
+                        localStorage.selectedBidang = 'kastrat';
+                    } 
+                    else if (a.classList.contains('logbid-kewirus')){
+                        bidangContentLoad (bidangKewirus);
+                        localStorage.selectedBidang = 'kewirus';
+                    } 
+                    else if (a.classList.contains('logbid-kestari')){
+                        bidangContentLoad (bidangKestari);
+                        localStorage.selectedBidang = 'kestari';
+                    } 
+                    else if (a.classList.contains('logbid-kesma')){
+                        bidangContentLoad (bidangKesma);
+                        localStorage.selectedBidang = 'kesma';
+                    } 
+                    else if (a.classList.contains('logbid-pengmas')){
+                        bidangContentLoad (bidangPengmas);
+                        localStorage.selectedBidang = 'pengmas';
+                    } 
+                    else if (a.classList.contains('logbid-litbang')){
+                        bidangContentLoad (bidangLitbang);
+                        localStorage.selectedBidang = 'litbang';
+                    } 
+                    else if (a.classList.contains('logbid-retro')){
+                        bidangContentLoad (bidangRetro);
+                        localStorage.selectedBidang = 'retro';
+                    } 
+                    else if (a.classList.contains('logbid-piptek')){
+                        bidangContentLoad (bidangPiptek);
+                        localStorage.selectedBidang = 'piptek';
+                    } 
+                    else if (a.classList.contains('logbid-siwa')){
+                        bidangContentLoad (bidangSiwa);
+                        localStorage.selectedBidang = 'siwa';
+                    } 
+                    else if (a.classList.contains('logbid-akpro')){
+                        bidangContentLoad (bidangAkpro);
+                        localStorage.selectedBidang = 'akpro';
+                    }
+                    anime({
+                        targets: '.section',
+                        opacity: 1,
+                        easing: 'easeOutExpo',
+                        duration: 1000,
+                    })
+                }
+            }).add({
+                targets: document.querySelectorAll('.section'),
+                opacity: 0,
+                duration: 2000,
+                direction: 'reverse',
+            })
+        })
+    })
+
 }
 
 // akademis.html
