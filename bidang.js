@@ -108,7 +108,7 @@ var bidangKominfo = {
             display: 'static'
         },
         {
-            nama: "Qinthara Andini TKom'20",
+            nama: "Andini TKom'20",
             foto: '',
             display: 'static'
         },
@@ -286,7 +286,7 @@ var bidangKastrat = {
     bidangNickname: 'kastrat',
     deskripsiBidang: 'Bidang yang berfungsi untuk mengkaji, mencerdaskan, dan mengimplementasikan ilmu kepada warga DTE mengenai isu-isu POLEKSOSBUDHANKAM dan keelektroan yang sedang berkembang.',
     logoBidang: 'assets/logbid/kastrat.png',
-    programKerja: '',
+    programKerja: 'Electrical Issue Center Competition and Electrical Issue Center Talks, DISTRO, Sociotalk',
     videoBidang: 'https://www.youtube.com/embed/TPnSk24OFVs',
     fotoBidang: [
         '',
@@ -302,8 +302,14 @@ var bidangKastrat = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Amadika Daffa Verlinan",
+            jabatan: 'Kepala Bidang',
+            foto: '',
+            display: 'block',
+        },
+        {
+            nama: "Muhammad Erlangga",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
@@ -311,30 +317,24 @@ var bidangKastrat = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
-        },
-        {
-            nama: "",
-            jabatan: '',
-            foto: '',
-            display: 'block',
+            display: 'none',
         },
         //STAFF AHLI
         {
-            nama: "",
-            jabatan: '',
+            nama: "Avecena Basuni",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Isti Fina",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Bagus Nurhuda",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         }
@@ -342,84 +342,84 @@ var bidangKastrat = {
     
     namaBP: [
         {
-            nama: "",
+            nama: "Miftahul Tirta E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Nayaka Arya E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Haris E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Rafli Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Rendy Christian E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Maulana Nurhendronoto TKom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Farisz Fristian E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Bryan Indarto E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Zahran Mizuya E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Dhandy Radya E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Nolland Zidane E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Iqbal Risya E'20",
             foto: '',
             display: 'static'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
+            display: 'none'
         },
     ]
 }
@@ -444,27 +444,33 @@ var bidangKewirus = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Aisyah R.",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Ivan Surya",
+            jabatan: 'Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Adipratomo",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
-            nama: "",
+            nama: "Omar M.",
             jabatan: '',
+            foto: 'Staf Ahli KEWIRUS',
+            display: 'block',
+        },
+        {
+            nama: "Nabila Amanda",
+            jabatan: 'Staf Ahli KEWIRUS',
             foto: '',
             display: 'block',
         },
@@ -472,96 +478,90 @@ var bidangKewirus = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
-        },
-        {
-            nama: "",
-            jabatan: '',
-            foto: '',
-            display: 'block',
+            display: 'none',
         }
     ],
     
     namaBP: [
         {
-            nama: "",
+            nama: "Raihan J.P. TKom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Anastasia Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Erry Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Ahmad E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Farhan TKom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Fuad E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Aditya E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Ghina Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Nisrina TKom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Cressia E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Hanna E'20",
             foto: '',
             display: 'static'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
+            display: 'none'
         },
     ]
 }
@@ -586,20 +586,20 @@ var bidangKestari = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Balqish A.",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Atalia",
+            jabatan: 'Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Marcella C.",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
@@ -608,50 +608,50 @@ var bidangKestari = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         },
         {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         },
         {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         }
     ],
     
     namaBP: [
         {
-            nama: "",
+            nama: "Valya",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Salma",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Raisha",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Francesco",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Miranty",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Stanley A",
             foto: '',
             display: 'static'
         },
@@ -712,7 +712,7 @@ var bidangKesma = {
     bidangNickname: 'kesma',
     deskripsiBidang: 'Bidang di IME FTUI yang bertanggung jawab mengenai advokasi mahasiswa di bidang finansial dan fasilitas.',
     logoBidang: 'assets/logbid/kesma.png',
-    programKerja: '',
+    programKerja: 'Database Kesma, EEF, HEDON, Kesma Care, Advokasi Fasilitas, Sharing Registrasi dan Beasiswa',
     videoBidang: 'https://www.youtube.com/embed/2dN5LoucJ9g',
     fotoBidang: [
         '',
@@ -728,8 +728,14 @@ var bidangKesma = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Jamilatun Nisa",
+            jabatan: 'Kepala Bidang',
+            foto: '',
+            display: 'block',
+        },
+        {
+            nama: "Cornelia Adristi",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
@@ -737,18 +743,12 @@ var bidangKesma = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
-        },
-        {
-            nama: "",
-            jabatan: '',
-            foto: '',
-            display: 'block',
+            display: 'none',
         },
         //STAFF AHLI
         {
-            nama: "",
-            jabatan: '',
+            nama: "Listi Farida",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
@@ -756,21 +756,86 @@ var bidangKesma = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         },
         {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         }
     ],
     
     namaBP: [
         {
-            nama: "",
+            nama: "Adiva TKom'20",
             foto: '',
             display: 'static'
+        },
+        {
+            nama: "M. Shaffa TKom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Ivan E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Gavin E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Brian E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Alfan E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Dzulkifar E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Kezia E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Sufrijal Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "",
+            foto: '',
+            display: 'none'
+        },
+        {
+            nama: "",
+            foto: '',
+            display: 'none'
+        },
+        {
+            nama: "",
+            foto: '',
+            display: 'none'
+        },
+        {
+            nama: "",
+            foto: '',
+            display: 'none'
+        },
+        {
+            nama: "",
+            foto: '',
+            display: 'none'
         },
         {
             nama: "",
@@ -780,72 +845,7 @@ var bidangKesma = {
         {
             nama: "",
             foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
+            display: 'none'
         },
     ]
 }
@@ -854,7 +854,7 @@ var bidangPengmas = {
     bidangNickname: 'pengmas',
     deskripsiBidang: 'Bidang yang bertanggung jawab untuk mewadahi dan menumbuhkan sikap kepedulian mahasiswa DTE terhadap masyarakat dan lingkungan hidup, dengan berhubungan serta menyalurkan core competence DTE kepada masyarakat.',
     logoBidang: 'assets/logbid/pengmas.png',
-    programKerja: '',
+    programKerja: 'Elektro Charity, SocioTalk, Gerakan Rangers Biru Muda (GRBM)',
     videoBidang: 'https://www.youtube.com/embed/R6FxLPJtmv8',
     fotoBidang: [
         '',
@@ -870,14 +870,14 @@ var bidangPengmas = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Afrah Faadhila",
+            jabatan: 'Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Athaya Z.",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
@@ -889,8 +889,8 @@ var bidangPengmas = {
         },
         //STAFF AHLI
         {
-            nama: "",
-            jabatan: '',
+            nama: "Gery Rafaniel",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
@@ -910,52 +910,52 @@ var bidangPengmas = {
     
     namaBP: [
         {
-            nama: "",
+            nama: "Dhau' Embun TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Zana Niswah TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Khatami Fahziyas E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Nadya Rizka E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Aleyda Najwa Biom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Kristoforus R. E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Raka Iqbal E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Firzy Allen TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Natasya Dewi E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Aleandro Farrel TKom'20",
             foto: '',
             display: 'static'
         },
@@ -996,7 +996,7 @@ var bidangLitbang = {
     bidangNickname: 'litbang',
     deskripsiBidang: 'Bidang penelitian dan pengembangan adalah bidang internal IME FTUI yang bertindak sebagai Analisator, evaluator, dan konsultan IME FTUI.',
     logoBidang: 'assets/logbid/litbang.png',
-    programKerja: '',
+    programKerja: 'Steering IKG, IKW, Sahabat Bidang, QC, HRE, Kaderisasi',
     videoBidang: 'https://www.youtube.com/embed/44g7Vi8aRv4',
     fotoBidang: [
         '',
@@ -1012,27 +1012,27 @@ var bidangLitbang = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Syarif H.",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Zidan F.",
+            jabatan: 'Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Fathurrahman",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
-            nama: "",
-            jabatan: '',
+            nama: "Karenina Kamila",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
@@ -1040,96 +1040,96 @@ var bidangLitbang = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         },
         {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         }
     ],
     
     namaBP: [
         {
-            nama: "",
+            nama: "Alhaura Edsa E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Matthew Gabriel E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Nada E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Ariq E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Adila Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Michael Angelo E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Adib Haryo E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Humam Nauvally E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Surya Aji E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Taqiy TKom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Zihan E'20",
             foto: '',
             display: 'static'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
+            display: 'none'
         },
     ]
 }
@@ -1138,7 +1138,7 @@ var bidangRetro = {
     bidangNickname: 'retro',
     deskripsiBidang: 'Bidang yang berfungsi untuk melakukan pewadahan serta menuansakan suasana keislaman di Departemen Teknik Elektro.',
     logoBidang: 'assets/logbid/retro.png',
-    programKerja: '',
+    programKerja: 'KIAS, BABE, KANTEK, KATRO, KAMUS',
     videoBidang: 'https://www.youtube.com/embed/hWN2wLgnFU0',
     fotoBidang: [
         '',
@@ -1154,8 +1154,14 @@ var bidangRetro = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Rakha Fadhli",
+            jabatan: 'Kepala Bidang',
+            foto: '',
+            display: 'block',
+        },
+        {
+            nama: "Fatih Dzulfiqar",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
@@ -1163,113 +1169,107 @@ var bidangRetro = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
-        },
-        {
-            nama: "",
-            jabatan: '',
-            foto: '',
-            display: 'block',
+            display: 'none',
         },
         //STAFF AHLI
         {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         },
         {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         },
         {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         }
     ],
     
     namaBP: [
         {
-            nama: "",
+            nama: "Zaidan Aris E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "M. Rialdo E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Anzillina Rahma Biom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Landha E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "M rafly yanuar TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Thooriq Maulana E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "M. Azhiim E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Rizal Ab'daan TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "M. Ahnaf wisnu E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Gilang S TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Fikri Afif TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Haryo Bimantoro E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "M. Daffa E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Raihan Azhari TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "M. Naufal TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Mikail Rahmansur E'20",
             foto: '',
             display: 'static'
         },
@@ -1280,7 +1280,7 @@ var bidangPiptek = {
     bidangNickname: 'piptek',
     deskripsiBidang: 'Bidang di yang mewadahi dan mengembangkan minat dan bakat warga Departemen Teknik Elektro dalam ilmu pengetahuan dan teknologi.',
     logoBidang: 'assets/logbid/piptek.png',
-    programKerja: '',
+    programKerja: 'ROTOM, MKI, Technoskill, NEST, ECHA, PKM Service',
     videoBidang: 'https://www.youtube.com/embed/o62a_H86zb8',
     fotoBidang: [
         '',
@@ -1296,27 +1296,33 @@ var bidangPiptek = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Arkana Yudhistira",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Fairuz Mummtaz",
+            jabatan: 'Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Rayhan Rizky",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
-            nama: "",
-            jabatan: '',
+            nama: "Alifya Ananda",
+            jabatan: 'Staff Ahli',
+            foto: '',
+            display: 'block',
+        },
+        {
+            nama: "Thariq Hadyan",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
@@ -1324,96 +1330,90 @@ var bidangPiptek = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
-        },
-        {
-            nama: "",
-            jabatan: '',
-            foto: '',
-            display: 'block',
+            display: 'none',
         }
     ],
     
     namaBP: [
         {
-            nama: "",
+            nama: "Brandon Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Thoriksyah E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Haitsam Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Akmal E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Noah Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Afiya E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Baihaqi E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Ahmad Rizky E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Kirana E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Theonaldo E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Salma TKom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Rifqi E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Tubagus E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Rafli E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Robert E'20",
             foto: '',
             display: 'static'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
+            display: 'none'
         },
     ]
 }
@@ -1564,7 +1564,7 @@ var bidangAkpro = {
     bidangNickname: 'akpro',
     deskripsiBidang: 'Bidang yang mengadvokasi dan memfasilitasi warga Departemen Teknik Elektro dalam hal akademis dan pasca kampus.',
     logoBidang: 'assets/logbid/akpro.png',
-    programKerja: '',
+    programKerja: 'Advokasi Akademis, Diktat, Asistensi, Evaluasi Pembelajaran, Sharing Registrasi dan Beasiswa, Sharing MATTACK, Sharing Session, Elektrifikasi',
     videoBidang: 'https://www.youtube.com/embed/bf3iNZBz5Sg',
     fotoBidang: [
         '',
@@ -1580,39 +1580,39 @@ var bidangAkpro = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Nayla Y.",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Athaya B.",
+            jabatan: 'Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Rusyda F.",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
-            nama: "",
-            jabatan: '',
+            nama: "M. Hadi",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Dani",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Reza S.",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         }
@@ -1620,67 +1620,67 @@ var bidangAkpro = {
     
     namaBP: [
         {
-            nama: "",
+            nama: "Grelyntan N. E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Valerie Olive E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "M. Septa A. E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Bima Adinata E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Hasyim Halim E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Joshevan TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Stevan Yosua TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Aisya Rafa E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Fadhil Umar E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Michael Theo Biom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Kresna Bayu E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Marvel Samuel E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "",
+            nama: "Ryan Daniel E'20",
             foto: '',
             display: 'static'
         },

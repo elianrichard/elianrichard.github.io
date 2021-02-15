@@ -858,98 +858,103 @@ function bidangLoaded(e){
     .add(navAnimate);
     
     //Scroll Animation
-    window.addEventListener('scroll', () => {
-        var videoBidangPosition = document.querySelector('.video-bidang').getBoundingClientRect().top;
-        var bphSaContainerPosition = document.querySelector('.bph-sa-container').getBoundingClientRect().top;
-        var bpContainerPosition = document.querySelector('.bp-container').getBoundingClientRect().top;
-        var screenHeight = window.innerHeight;
-
-        if (videoBidangPosition < screenHeight / 1.3){
-            if (!(document.querySelector('.video-bidang').classList.contains('active'))){
-                document.querySelector('.video-bidang').classList.add('active');
-                anime.timeline({
-                    easing: 'easeOutExpo',
-                }).add({
-                    targets: document.querySelector('.video-bidang-title'), 
-                    translateX: ['-100', '0'],
-                    opacity: ['0', '1'],
-                    duration: 1000,
-                }).add({
-                    targets: document.querySelector('.video-background'),
-                    height: ['0%','100%'],
-                    opacity: ['0', '1'],
-                    duration: 1000,
-                }, '-=500').add({
-                    targets: document.querySelector('.video-bidang'),
-                    translateX: ['-100', '0'],
-                    opacity: ['0', '1'],
-                    duration: 1000,
-                }, '-=500')
+    scrollAnimateBidang();
+    function scrollAnimateBidang () {
+        window.addEventListener('scroll', () => {
+            var videoBidangPosition = document.querySelector('.video-bidang').getBoundingClientRect().top;
+            var bphSaContainerPosition = document.querySelector('.bph-sa-container').getBoundingClientRect().top;
+            var bpContainerPosition = document.querySelector('.bp-container').getBoundingClientRect().top;
+            var screenHeight = window.innerHeight;
+    
+            if (videoBidangPosition < screenHeight / 1.3){
+                if (!(document.querySelector('.video-bidang').classList.contains('active'))){
+                    document.querySelector('.video-bidang').classList.add('active');
+                    var scrollVideo = anime.timeline({
+                        easing: 'easeOutExpo',
+                        autolay: false,
+                    }).add({
+                        targets: document.querySelector('.video-bidang-title'), 
+                        translateX: ['-100', '0'],
+                        opacity: ['0', '1'],
+                        duration: 1000,
+                    }).add({
+                        targets: document.querySelector('.video-background'),
+                        height: ['0%','100%'],
+                        opacity: ['0', '1'],
+                        duration: 1000,
+                    }, '-=500').add({
+                        targets: document.querySelector('.video-bidang'),
+                        translateX: ['-100', '0'],
+                        opacity: ['0', '1'],
+                        duration: 1000,
+                    }, '-=500')
+                    scrollVideo.play;
+                }
             }
-        }
-        if (bphSaContainerPosition < screenHeight / 1.5){
-            if (!(document.querySelector('.bph-sa-container').classList.contains('active'))){
-                document.querySelector('.bph-sa-container').classList.add('active');
-                anime.timeline({
-                }).add({
-                    targets: document.querySelector('.bph-text'), 
-                    opacity: ['0', '1'],
-                    easing: 'easeOutExpo',
-                    duration: 1000,
-                }).add({
-                    targets: document.querySelector('.sa-text'),
-                    opacity: ['0', '1'],
-                    easing: 'easeOutExpo',
-                    duration: 1000,
-                }, '-=900').add({
-                    targets: document.querySelectorAll('.bph-foto'),
-                    scale: [0, 1],
-                    delay: (el, i) => {
-                        return i*100;
-                    },
-                }, '-=900').add({
-                    targets: document.querySelectorAll('.bph-nama'),
-                    translateY: ['50', '0'],
-                    opacity: ['0', '1'],
-                    delay: (el, i) => {
-                        return i*100;
-                    }
-                }, '-=500').add({
-                    targets: document.querySelectorAll('.bph-jabatan'),
-                    translateY: ['50', '0'],
-                    opacity: ['0', '1'],
-                    delay: (el, i) => {
-                        return (i*100);
-                    }
-                }, '-=1000')
+            if (bphSaContainerPosition < screenHeight / 1.5){
+                if (!(document.querySelector('.bph-sa-container').classList.contains('active'))){
+                    document.querySelector('.bph-sa-container').classList.add('active');
+                    anime.timeline({
+                    }).add({
+                        targets: document.querySelector('.bph-text'), 
+                        opacity: ['0', '1'],
+                        easing: 'easeOutExpo',
+                        duration: 1000,
+                    }).add({
+                        targets: document.querySelector('.sa-text'),
+                        opacity: ['0', '1'],
+                        easing: 'easeOutExpo',
+                        duration: 1000,
+                    }, '-=900').add({
+                        targets: document.querySelectorAll('.bph-foto'),
+                        scale: [0, 1],
+                        delay: (el, i) => {
+                            return i*100;
+                        },
+                    }, '-=900').add({
+                        targets: document.querySelectorAll('.bph-nama'),
+                        translateY: ['50', '0'],
+                        opacity: ['0', '1'],
+                        delay: (el, i) => {
+                            return i*100;
+                        }
+                    }, '-=500').add({
+                        targets: document.querySelectorAll('.bph-jabatan'),
+                        translateY: ['50', '0'],
+                        opacity: ['0', '1'],
+                        delay: (el, i) => {
+                            return (i*100);
+                        }
+                    }, '-=1000')
+                }
             }
-        }
-        if (bpContainerPosition < screenHeight / 1.5){
-            if (!(document.querySelector('.bp-container').classList.contains('active'))){
-                document.querySelector('.bp-container').classList.add('active');
-                anime.timeline({
-                }).add({
-                    targets: document.querySelector('.bp-text'),
-                    opacity: [0, 1],
-                    duration: 500,
-                    easing: 'easeOutExpo',
-                }).add({
-                    targets: document.querySelectorAll('.bp-foto'),
-                    scale: [0, 1],
-                    delay: (el, i) => {
-                        return (i*100);
-                    }
-                }).add({
-                    targets: document.querySelectorAll('.bp-nama'),
-                    opacity: [0, 1],
-                    translateY: ['50', '0'],
-                    delay: (el, i) => {
-                        return (i*100);
-                    }
-                }, '-=900')
+            if (bpContainerPosition < screenHeight / 1.5){
+                if (!(document.querySelector('.bp-container').classList.contains('active'))){
+                    document.querySelector('.bp-container').classList.add('active');
+                    anime.timeline({
+                    }).add({
+                        targets: document.querySelector('.bp-text'),
+                        opacity: [0, 1],
+                        duration: 500,
+                        easing: 'easeOutExpo',
+                    }).add({
+                        targets: document.querySelectorAll('.bp-foto'),
+                        scale: [0, 1],
+                        delay: (el, i) => {
+                            return (i*100);
+                        }
+                    }).add({
+                        targets: document.querySelectorAll('.bp-nama'),
+                        opacity: [0, 1],
+                        translateY: ['50', '0'],
+                        delay: (el, i) => {
+                            return (i*100);
+                        }
+                    }, '-=900')
+                }
             }
-        }
-    })
+        })
+    }
     
 
     //CONTENT CHANGE
@@ -1197,10 +1202,24 @@ function bidangLoaded(e){
             document.querySelector('.video-bidang').classList.remove('active');
             document.querySelector('.bph-sa-container').classList.remove('active');
             document.querySelector('.bp-container').classList.remove('active');
-
+            // document.querySelector('.bidang-logo').querySelector('img').removeAttribute('style');
+            // document.querySelector('.bidang-title').removeAttribute('style');
+            // document.querySelector('.bidang-proker').removeAttribute('style');
+            // document.querySelector('.bidang-foto-container').querySelectorAll('div').forEach((a)=>{
+            //     a.removeAttribute('style');
+            // })
+            // document.querySelector('video-bidang-title')
+            
             anime.timeline({
                 easing: 'easeOutExpo',
                 complete: () => {
+                    scrollAnimateBidang();
+                    document.querySelectorAll('div').forEach((a)=>{
+                        a.removeAttribute('style')
+                    })
+                    document.querySelectorAll('img').forEach((a)=>{
+                        a.removeAttribute('style')
+                    })
                     if (a.classList.contains('logbid-kominfo')){
                         bidangContentLoad (bidangKominfo);
                         localStorage.selectedBidang = 'kominfo';
@@ -1249,12 +1268,23 @@ function bidangLoaded(e){
                         bidangContentLoad (bidangAkpro);
                         localStorage.selectedBidang = 'akpro';
                     }
-                    anime({
-                        targets: '.section',
-                        opacity: 1,
-                        easing: 'easeOutExpo',
-                        duration: 1000,
-                    })
+                    setTimeout(() => {
+                        anime.timeline({
+                            easing: 'easeOutExpo',
+                        }).add({
+                            targets: '.section',
+                            opacity: 1,
+                            duration: 1000,
+                        }).add({
+                            targets: '.bidang-foto-container div',
+                            duration: 500,
+                            translateY: [40, 0],
+                            opacity: [0, 1],
+                            delay: (el, i) => {
+                                return 100 * i;
+                            },
+                        }, '-=1000')
+                    }, 500)
                 }
             }).add({
                 targets: document.querySelectorAll('.section'),
