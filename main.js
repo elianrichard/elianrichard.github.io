@@ -1188,16 +1188,15 @@ function bidangLoaded(e){
             }
         })
     })
-    // var classArray = ['.bidang-logo img', '.bidang-title', '.bidang-proker', '']
 
     //bidangRefresh
     document.querySelector('.logbid-logos').querySelectorAll('a').forEach((a) => {
         a.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({top: 0, behavior: "smooth"});
-            // document.querySelector('.video-bidang').classList.remove('active');
-            // document.querySelector('.bph-sa-container').classList.remove('active');
-            // document.querySelector('.bp-container').classList.remove('active');
+            document.querySelector('.video-bidang').classList.remove('active');
+            document.querySelector('.bph-sa-container').classList.remove('active');
+            document.querySelector('.bp-container').classList.remove('active');
 
             anime.timeline({
                 easing: 'easeOutExpo',

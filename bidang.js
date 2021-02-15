@@ -303,32 +303,38 @@ var bidangKastrat = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -439,32 +445,38 @@ var bidangKewirus = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -575,32 +587,38 @@ var bidangKestari = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -711,32 +729,38 @@ var bidangKesma = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -847,32 +871,38 @@ var bidangPengmas = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -983,32 +1013,38 @@ var bidangLitbang = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -1119,32 +1155,38 @@ var bidangRetro = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -1255,32 +1297,38 @@ var bidangPiptek = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -1391,32 +1439,38 @@ var bidangSiwa = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
@@ -1527,32 +1581,38 @@ var bidangAkpro = {
     namaBPH: [
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         },
         {
             nama: "",
+            jabatan: '',
             foto: '',
             display: 'block',
         }
