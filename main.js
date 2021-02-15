@@ -929,6 +929,11 @@ function bidangLoaded(e){
                 document.querySelector('.bp-container').classList.add('active');
                 anime.timeline({
                 }).add({
+                    targets: document.querySelector('.bp-text'),
+                    opacity: [0, 1],
+                    duration: 500,
+                    easing: 'easeOutExpo',
+                }).add({
                     targets: document.querySelectorAll('.bp-foto'),
                     scale: [0, 1],
                     delay: (el, i) => {
