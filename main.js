@@ -1032,6 +1032,7 @@ function bidangLoaded(e){
             var videoBidangPosition = document.querySelector('.video-bidang').getBoundingClientRect().top;
             var bphSaContainerPosition = document.querySelector('.bph-sa-container').getBoundingClientRect().top;
             var bpContainerPosition = document.querySelector('.bp-container').getBoundingClientRect().top;
+            var logoBidangPosition = document.querySelector('.logbid-logo').getBoundingClientRect().top;
             var screenHeight = window.innerHeight;
     
             if (videoBidangPosition < screenHeight / 1.3){
@@ -1119,6 +1120,33 @@ function bidangLoaded(e){
                             return (i*100);
                         }
                     }, '-=1000')
+                }
+            }
+            if (logoBidangPosition < screenHeight / 2){
+                if (!(document.querySelector('.logbid-logo').classList.contains('active'))){
+                    document.querySelector('.logbid-logo').classList.add('active');
+                    anime.timeline({
+                    }).add({
+                        targets: '.logbid-bidang-logo',
+                        scale: [0, 1],
+                        duration: 800,
+                    }).add({
+                        targets: '.logbid-bidang-title',
+                        opacity: [0, 1],
+                        translateX: ['100', '0'],
+                        easing: 'easeOutExpo',
+                        duration: 600,
+                    }).add({
+                        targets: '.logbid-bidang-desc',
+                        opacity: [0, 1],
+                        translateX: ['100', '0'],
+                        easing: 'easeOutExpo',
+                        duration: 600,
+                    }, '-=400').add({
+                        targets: '.logbid-logos div',
+                        scale: [0, 1],
+                        delay: anime.stagger(100),
+                    })
                 }
             }
         })
