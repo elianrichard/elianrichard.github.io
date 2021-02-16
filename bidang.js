@@ -428,7 +428,7 @@ var bidangKewirus = {
     bidangNickname: 'kewirus',
     deskripsiBidang: 'Bidang yang bertanggung jawab untuk mengatur alir keuangan dan mencari pemasukan dana untuk IME FTUI serta menumbuhkan semangat kewirausahaan warga Departemen Teknik Elektro.',
     logoBidang: 'assets/logbid/kewirus.png',
-    programKerja: '',
+    programKerja: 'Audit Keuangan, Pengajuan Dana, Pembagian Untung Rugi, TRIBUTION, El Mart',
     videoBidang: 'https://www.youtube.com/embed/xSAp63prZj0',
     fotoBidang: [
         '',
@@ -464,8 +464,8 @@ var bidangKewirus = {
         //STAFF AHLI
         {
             nama: "Omar M.",
-            jabatan: '',
-            foto: 'Staf Ahli KEWIRUS',
+            jabatan: 'Staf Ahli KEWIRUS',
+            foto: '',
             display: 'block',
         },
         {
@@ -570,7 +570,7 @@ var bidangKestari = {
     bidangNickname: 'kestari',
     deskripsiBidang: 'Bidang yang berperan sebagai pusat administrasi dan inventarisasi yang dimiliki oleh lembaga IME FTUI.',
     logoBidang: 'assets/logbid/kestari.png',
-    programKerja: '',
+    programKerja: 'Archive, Inventory, LPJ Quiz, Timeline Planner, Konsolidasi, Birthday Blast',
     videoBidang: 'https://www.youtube.com/embed/PfrEVp_O2H8',
     fotoBidang: [
         '',
@@ -626,84 +626,84 @@ var bidangKestari = {
     
     namaBP: [
         {
-            nama: "Valya",
+            nama: "Valya TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "Salma",
+            nama: "Salma E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "Raisha",
+            nama: "Raisha Biom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "Francesco",
+            nama: "Francesco E'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "Miranty",
+            nama: "Miranty TKom'20",
             foto: '',
             display: 'static'
         },
         {
-            nama: "Stanley A",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
+            nama: "Stanley A. E'20",
             foto: '',
             display: 'static'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
+        },
+        {
+            nama: "",
+            foto: '',
+            display: 'none'
         },
     ]
 }
@@ -885,7 +885,7 @@ var bidangPengmas = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         },
         //STAFF AHLI
         {
@@ -898,13 +898,13 @@ var bidangPengmas = {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         },
         {
             nama: "",
             jabatan: '',
             foto: '',
-            display: 'block',
+            display: 'none',
         }
     ],
     
@@ -1422,7 +1422,7 @@ var bidangSiwa = {
     bidangNickname: 'siwa',
     deskripsiBidang: 'Bidang yang mewadahi warga Departemen Teknik Elektro pada bidang seni dan olahraga. Bidang ini bertanggung jawab untuk mengembangkan bakat warga dengan menciptakan suasana bersenang-senang.',
     logoBidang: 'assets/logbid/siwa.png',
-    programKerja: '',
+    programKerja: 'Latihan Rutin, Gladiator, Winning Elektro, Electrical Nite  (E-Nite), Sena Seni, EE Cup',
     videoBidang: 'https://www.youtube.com/embed/BlnDKJurc_Y',
     fotoBidang: [
         '',
@@ -1438,39 +1438,39 @@ var bidangSiwa = {
     ],
     namaBPH: [
         {
-            nama: "",
-            jabatan: '',
+            nama: "Alya",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Syehu",
+            jabatan: 'Kepala Bidang',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Natasya",
+            jabatan: 'Wakil Kepala Bidang',
             foto: '',
             display: 'block',
         },
         //STAFF AHLI
         {
-            nama: "",
-            jabatan: '',
+            nama: "Raehan",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Tyak",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         },
         {
-            nama: "",
-            jabatan: '',
+            nama: "Athall",
+            jabatan: 'Staff Ahli',
             foto: '',
             display: 'block',
         }
@@ -1478,84 +1478,84 @@ var bidangSiwa = {
     
     namaBP: [
         {
-            nama: "",
+            nama: "Shaniya TKom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Maria E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Haris E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Wina E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Livia Biom'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M. Hisyam E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "M Nafi E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Althaira E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Najwati E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Achmad F. E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Zahwan A. E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Nafilah S. E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Fathi Ilham E'20",
+            foto: '',
+            display: 'static'
+        },
+        {
+            nama: "Jevon V. E'20",
             foto: '',
             display: 'static'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
-        },
-        {
-            nama: "",
-            foto: '',
-            display: 'static'
+            display: 'none'
         },
     ]
 }
@@ -1687,17 +1687,17 @@ var bidangAkpro = {
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
     ]
 }

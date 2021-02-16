@@ -950,7 +950,7 @@ function bidangLoaded(e){
                         delay: (el, i) => {
                             return (i*100);
                         }
-                    }, '-=900')
+                    }, '-=1000')
                 }
             }
         })
@@ -991,6 +991,9 @@ function bidangLoaded(e){
         bidangContentLoad (bidangKewirus);
     } else if (localStorage.selectedBidang === 'kestari'){
         bidangContentLoad (bidangKestari);
+        document.querySelector('.bph-sa-container').style.gridTemplateRows = '1fr';
+        document.querySelectorAll('.bph-container')[0].style.justifyContent = 'center';
+        document.querySelectorAll('.bph-container')[1].style.display = 'none';
     } else if (localStorage.selectedBidang === 'kesma'){
         bidangContentLoad (bidangKesma);
     } else if (localStorage.selectedBidang === 'pengmas'){
@@ -999,6 +1002,9 @@ function bidangLoaded(e){
         bidangContentLoad (bidangLitbang);
     } else if (localStorage.selectedBidang === 'retro'){
         bidangContentLoad (bidangRetro);
+        document.querySelector('.bph-sa-container').style.gridTemplateRows = '1fr';
+        document.querySelectorAll('.bph-container')[0].style.justifyContent = 'center';
+        document.querySelectorAll('.bph-container')[1].style.display = 'none';
     } else if (localStorage.selectedBidang === 'piptek'){
         bidangContentLoad (bidangPiptek);
     } else if (localStorage.selectedBidang === 'siwa'){
@@ -1115,7 +1121,6 @@ function bidangLoaded(e){
     var bidangTitle = document.querySelector('.logbid-bidang-title');
     var bidangMainLogo = document.querySelector('.logbid-bidang-logo');
     var bidangLogo = document.querySelector('.logbid-logos').querySelectorAll('img');
-    let onFade = false;
     let currentLogo;
     function bidangLoadTemplate (x, y){
         bidangTitle.textContent = x.namaBidang;
@@ -1125,100 +1130,73 @@ function bidangLoaded(e){
 
     bidangLogo.forEach((a) => {
         a.addEventListener('mouseover', (e) => {
-            if (!onFade){
-                if (!(currentLogo === e.target.parentElement.className)){
-                    onFade = true;
-                    anime.timeline({
-                        easing: 'easeOutQuad',
-                        complete: () => {
-                            if (e.target.parentElement.classList.contains('logbid-kominfo')){
-                                bidangLoadTemplate(bidangKominfo, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-kema')){
-                                bidangLoadTemplate(bidangKema, e);
-                            }
-                            else if (e.target.parentElement.classList.contains('logbid-kastrat')){
-                                bidangLoadTemplate(bidangKastrat, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-kewirus')){
-                                bidangLoadTemplate(bidangKewirus, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-kestari')){
-                                bidangLoadTemplate(bidangKestari, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-kesma')){
-                                bidangLoadTemplate(bidangKesma, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-pengmas')){
-                                bidangLoadTemplate(bidangPengmas, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-litbang')){
-                                bidangLoadTemplate(bidangLitbang, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-retro')){
-                                bidangLoadTemplate(bidangRetro, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-piptek')){
-                                bidangLoadTemplate(bidangPiptek, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-siwa')){
-                                bidangLoadTemplate(bidangSiwa, e);
-                            } 
-                            else if (e.target.parentElement.classList.contains('logbid-akpro')){
-                                bidangLoadTemplate(bidangAkpro, e);
-                            }
-                            anime.timeline({
-                                easing: 'easeOutExpo',
-                            }).add({
-                                targets: bidangMainLogo.parentElement,
-                                opacity: [0, 1],
-                                duration: 100,
-                            }).add({
-                                targets: bidangTitle,
-                                opacity: [0, 1],
-                                duration: 100,
-                            })
-                            onFade = false;
-                        }
-                    }).add({
-                        targets: bidangMainLogo.parentElement,
-                        opacity: [1, 0],
-                        duration: 100,
-                    }).add({
-                        targets: bidangTitle,
-                        opacity: [1, 0],
-                        duration: 100,
-                    }, '-=100')
+            if (!(currentLogo === e.target.parentElement.className)){
+                onFade = true;
+                if (e.target.parentElement.classList.contains('logbid-kominfo')){
+                    bidangLoadTemplate(bidangKominfo, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-kema')){
+                    bidangLoadTemplate(bidangKema, e);
+                }
+                else if (e.target.parentElement.classList.contains('logbid-kastrat')){
+                    bidangLoadTemplate(bidangKastrat, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-kewirus')){
+                    bidangLoadTemplate(bidangKewirus, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-kestari')){
+                    bidangLoadTemplate(bidangKestari, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-kesma')){
+                    bidangLoadTemplate(bidangKesma, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-pengmas')){
+                    bidangLoadTemplate(bidangPengmas, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-litbang')){
+                    bidangLoadTemplate(bidangLitbang, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-retro')){
+                    bidangLoadTemplate(bidangRetro, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-piptek')){
+                    bidangLoadTemplate(bidangPiptek, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-siwa')){
+                    bidangLoadTemplate(bidangSiwa, e);
+                } 
+                else if (e.target.parentElement.classList.contains('logbid-akpro')){
+                    bidangLoadTemplate(bidangAkpro, e);
                 }
             }
         })
     })
-
+    
     //bidangRefresh
     document.querySelector('.logbid-logos').querySelectorAll('a').forEach((a) => {
         a.addEventListener('click', (e) => {
             e.preventDefault();
             window.scrollTo({top: 0, behavior: "smooth"});
-            document.querySelector('.video-bidang').classList.remove('active');
-            document.querySelector('.bph-sa-container').classList.remove('active');
-            document.querySelector('.bp-container').classList.remove('active');
-            // document.querySelector('.bidang-logo').querySelector('img').removeAttribute('style');
-            // document.querySelector('.bidang-title').removeAttribute('style');
-            // document.querySelector('.bidang-proker').removeAttribute('style');
-            // document.querySelector('.bidang-foto-container').querySelectorAll('div').forEach((a)=>{
-            //     a.removeAttribute('style');
-            // })
-            // document.querySelector('video-bidang-title')
-            
             anime.timeline({
                 easing: 'easeOutExpo',
                 complete: () => {
-                    scrollAnimateBidang();
-                    document.querySelectorAll('div').forEach((a)=>{
-                        a.removeAttribute('style')
-                    })
-                    document.querySelectorAll('img').forEach((a)=>{
-                        a.removeAttribute('style')
+                    var removeClass = ['.video-bidang', '.bph-sa-container', '.bp-container']
+                    var removeStyle = ['.bidang-logo img', '.bidang-title', '.bidang-proker', '.video-bidang-title', '.video-background', '.video-bidang', '.bph-text', '.sa-text', '.bp-text', '.bph-sa-container']
+                    var removeStyleForEach = ['.bph-foto', '.bph-nama', '.bph-jabatan', '.bp-foto', '.bp-nama', '.bph-container']
+                    
+                    for (let i = 0; i < removeClass.length; i++){
+                        document.querySelector(removeClass[i]).classList.remove('active');
+                    }
+                    for (let i = 0; i < removeStyle.length; i++){
+                        document.querySelector(removeStyle[i]).removeAttribute('style');
+                    }            
+                    for (let i = 0; i < removeStyleForEach.length; i++){
+                        document.querySelectorAll(removeStyleForEach[i]).forEach((a)=>{
+                            a.removeAttribute('style');
+                        })
+                    }
+                    document.querySelector('.bidang-foto-container').querySelectorAll('div').forEach((a)=>{
+                        a.removeAttribute('style');
                     })
                     if (a.classList.contains('logbid-kominfo')){
                         bidangContentLoad (bidangKominfo);
@@ -1239,6 +1217,9 @@ function bidangLoaded(e){
                     else if (a.classList.contains('logbid-kestari')){
                         bidangContentLoad (bidangKestari);
                         localStorage.selectedBidang = 'kestari';
+                        document.querySelector('.bph-sa-container').style.gridTemplateRows = '1fr';
+                        document.querySelectorAll('.bph-container')[0].style.justifyContent = 'center';
+                        document.querySelectorAll('.bph-container')[1].style.display = 'none';
                     } 
                     else if (a.classList.contains('logbid-kesma')){
                         bidangContentLoad (bidangKesma);
@@ -1255,6 +1236,9 @@ function bidangLoaded(e){
                     else if (a.classList.contains('logbid-retro')){
                         bidangContentLoad (bidangRetro);
                         localStorage.selectedBidang = 'retro';
+                        document.querySelector('.bph-sa-container').style.gridTemplateRows = '1fr';
+                        document.querySelectorAll('.bph-container')[0].style.justifyContent = 'center';
+                        document.querySelectorAll('.bph-container')[1].style.display = 'none';
                     } 
                     else if (a.classList.contains('logbid-piptek')){
                         bidangContentLoad (bidangPiptek);
@@ -1289,7 +1273,7 @@ function bidangLoaded(e){
             }).add({
                 targets: document.querySelectorAll('.section'),
                 opacity: 0,
-                duration: 2000,
+                duration: 1000,
                 direction: 'reverse',
             })
         })

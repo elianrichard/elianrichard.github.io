@@ -36,7 +36,10 @@
 }
 
 /* settings */
-.body{
+html{
+    scroll-behavior: smooth;
+}
+body{
     overflow-x: hidden;
 }
 .blue{
@@ -1148,9 +1151,10 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 10vh;
     }
     .bidang-foto-container{
-        height: auto;
+        height: 80vh;
     }
     .bidang-logo img{
         width: 150px;
@@ -1167,7 +1171,7 @@ body {
 }
 .video-bidang-container{
     width: 80%;
-    height: 70%;
+    height: 80%;
     margin: 2rem auto 0;
     display: flex;
     justify-content: center;
@@ -1230,14 +1234,22 @@ body {
 }
 @media only screen and (max-height: 600px){
     .video-bidang-container{
-        height: 80vh;
-        width: 100%;
-        margin: 0;
+        height: 500px;
+        width: 70%;
+        margin: auto;
     }
     .video-bidang{
         position: static;
-        height: 50vh;
-        width: 50vw; 
+        height: 400px;
+        width: 700px; 
+    }
+}
+@media only screen and (max-height: 600px) and (max-width: 768px){
+    .video-bidang-container{
+        height: 100vh;
+    }
+    .bidang-foto-container{
+        height: auto;
     }
 }
 
@@ -1262,7 +1274,7 @@ body {
     margin-bottom: 1rem;
 }
 .bph-bph{
-    height: 100%;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
