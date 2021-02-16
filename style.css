@@ -385,11 +385,20 @@ body {
     }
 }
 @media only screen and (max-height: 600px){
+    .landing-grid{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+    }
+    .landing-title-grid{
+        height: auto;
+        margin: 2rem 0;
+    }
     .logo-ime-container{
         width: 250px;
     }
     .logo-ime{
-        width: 20vw;
+        width: 100%;
         margin: auto;
     }
 }
