@@ -128,6 +128,174 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 //index.html
 function indexLoaded(e){
+    //SCROLL ANIMATION
+    if (window.innerWidth  < 768){
+        anime.timeline({
+        }).add({
+            targets: '.logo-ime-container',
+            opacity: [0, 1],
+            duration: 800,
+            easing: 'easeOutExpo'
+        }).add({
+            targets: '.logo-desc-flex',
+            scale: [0, 1],
+            delay: anime.stagger(100),
+        }).add({
+            targets: '.landing-title-grid',
+            opacity: [0, 1],
+            duration: 800,
+            easing: 'easeOutExpo'
+        }, '-=500').add({
+            targets: '.landing-text',
+            opacity: [0, 1],
+            translateY: ['50', '0'],
+            duration: 800,
+        }, '-=400')
+    } else {
+        anime.timeline({
+            easing: 'easeOutExpo'
+        }).add({
+            targets: '.logo-ime-container',
+            opacity: [0, 1],
+            duration: 1000,
+        }).add({
+            targets: '.landing-title-text',
+            opacity: [0, 1],
+            duration: 1000,
+        }).add({
+            targets: '.landing-img-kiri',
+            scaleX: ['0', '1'],
+            duration: 800,
+        }, '-=800').add({
+            targets: '.landing-img-kanan',
+            scaleX: ['0', '1'],
+            duration: 800,
+        }, '-=800').add({
+            targets: '.landing-text',
+            opacity: [0, 1],
+            translateY: ['50', '0'],
+            duration: 800,
+        }).add(navAnimate)
+    }
+
+    window.addEventListener('scroll', () => {
+        var logoBidangPosition = document.querySelector('.logbid-logo').getBoundingClientRect().top;
+        var youtubePosition = document.querySelector('.video-highlight').getBoundingClientRect().top;
+        var artikelPosition = document.querySelector('.artikel-container').getBoundingClientRect().top;
+        var socialMediaPosition = document.querySelector('.social-media-icons').parentElement.getBoundingClientRect().top;
+        var screenHeight = window.innerHeight;
+
+        if (logoBidangPosition < screenHeight / 2){
+            if (!(document.querySelector('.logbid-logo').classList.contains('active'))){
+                document.querySelector('.logbid-logo').classList.add('active');
+                anime.timeline({
+                }).add({
+                    targets: '.logbid-bidang-logo',
+                    scale: [0, 1],
+                    duration: 800,
+                }).add({
+                    targets: '.logbid-bidang-title',
+                    opacity: [0, 1],
+                    translateX: ['100', '0'],
+                    easing: 'easeOutExpo',
+                    duration: 600,
+                }).add({
+                    targets: '.logbid-bidang-desc',
+                    opacity: [0, 1],
+                    translateX: ['100', '0'],
+                    easing: 'easeOutExpo',
+                    duration: 600,
+                }, '-=400').add({
+                    targets: '.logbid-logos div',
+                    scale: [0, 1],
+                    delay: anime.stagger(100),
+                })
+            }
+        }
+        if (youtubePosition < screenHeight / 2){
+            if (!(document.querySelector('.video-highlight').classList.contains('active'))){
+                document.querySelector('.video-highlight').classList.add('active');
+                if (window.innerWidth < 768) {
+                    anime.timeline({
+                    }).add({
+                        targets: '.youtube-title-mobile',
+                        opacity: [0, 1],
+                        translateX: ['100', '0'],
+                        easing: 'easeOutExpo',
+                        duration: 600,
+                    }).add({
+                        targets: '.video-highlight',
+                        scale: [0, 1],
+                        duration: 1500,
+                    }, '-=400').add({
+                        targets: '.youtube-desc',
+                        opacity: [0, 1],
+                        translateX: ['100', '0'],
+                        easing: 'easeOutExpo',
+                        duration: 600,
+                    }, '-=1200').add({
+                        targets: '.youtube-thumbnail-title',
+                        opacity: [0, 1],
+                        translateX: ['100', '0'],
+                        easing: 'easeOutExpo',
+                        duration: 600,
+                    }, '-=300').add({
+                        targets: '.video-thumbnail',
+                        scale: [0, 1],
+                        delay: anime.stagger(100),
+                    }, '-=300').add({
+                        targets: '.youtube-button',
+                        scale: [0, 1],
+                        duration: 500,
+                    }, '-=200')
+                } else {
+                    anime.timeline({
+                    }).add({
+                        targets: '.video-highlight',
+                        scale: [0, 1],
+                        duration: 1500,
+                    }).add({
+                        targets: '.youtube-desc',
+                        opacity: [0, 1],
+                        translateX: ['100', '0'],
+                        easing: 'easeOutExpo',
+                        duration: 600,
+                    }, '-=400').add({
+                        targets: '.youtube-thumbnail-title',
+                        opacity: [0, 1],
+                        translateX: ['100', '0'],
+                        easing: 'easeOutExpo',
+                        duration: 600,
+                    }, '-=400').add({
+                        targets: '.video-thumbnail',
+                        scale: [0, 1],
+                        delay: anime.stagger(200),
+                    }, '-=300').add({
+                        targets: '.youtube-button',
+                        scale: [0, 1],
+                        duration: 500,
+                    }, '-=900')
+                }
+            }
+        }
+        var screenHeightSocialMedia;
+        if (window.innerWidth < 768){
+            screenHeightSocialMedia = screenHeight / 3;
+        } else {
+            screenHeightSocialMedia = screenHeight / 2
+        }
+        if (socialMediaPosition < screenHeightSocialMedia){
+            if (!(document.querySelector('.social-media-icons').classList.contains('active'))){
+                document.querySelector('.social-media-icons').classList.add('active');
+                anime({
+                    targets: '.social-media-icons i',
+                    scale: [0, 1],
+                    delay: anime.stagger(150),
+                })
+            }
+        }
+    })
+
     //LANDING
     var logoMatahari = document.querySelector('.matahari')
     var descMatahari = document.querySelector('.logo-desc-matahari')
