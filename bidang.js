@@ -145,7 +145,7 @@ var bidangKema = {
     bidangNickname: 'kema',
     deskripsiBidang: 'Bidang yang berfungsi untuk membina dan menanamkan nilai-nilai serta softskills dan memiliki fungsi sebagai garda terdepan dalam pembinaan serta koordinator arah gerak kemahasiswaan di Departemen Teknik Elektro.',
     logoBidang: 'assets/logbid/kema.png',
-    programKerja: '',
+    programKerja: 'Pengembangan Potensi Diri Warga Elektro (PONSEL), Latihan Dasar Kepemimpinan Mahasiswa (LDKM)',
     videoBidang: 'https://www.youtube.com/embed/v7BCu4Em2DQ',
     fotoBidang: [
         'assets/foto-bidang/party-5.jpg',
@@ -840,7 +840,7 @@ var bidangKesma = {
         {
             nama: "",
             foto: '',
-            display: 'static'
+            display: 'none'
         },
         {
             nama: "",
