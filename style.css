@@ -204,6 +204,7 @@ body {
 .landing-text{
     width: 80%;
     margin: auto;
+    opacity: 0;
 }
 .logo-ime{
     width: 100%;
@@ -214,6 +215,7 @@ body {
     align-items: flex-start;
     position: relative;
     width: 25vw;
+    opacity: 0;
 }
 .logo-desc-container{
     width: 30vw;
@@ -271,6 +273,7 @@ body {
     grid-template-columns: 1fr 600px 1fr;
 }
 .landing-title-text{
+    opacity: 0;
     color: var(--blue);
 }
 .landing-img-kiri{

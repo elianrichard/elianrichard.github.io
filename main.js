@@ -126,6 +126,12 @@ document.addEventListener('DOMContentLoaded', (e) => {
     })
 })
 
+//NAV LINE
+document.querySelector('.main-navbar').querySelectorAll('li').forEach((a)=>{
+    a.appendChild(document.createElement('div'));
+    a.querySelector('div').classList.add('line');
+});
+
 //index.html
 function indexLoaded(e){
     //SCROLL ANIMATION

@@ -186,7 +186,7 @@ var bidangKema = {
             display: 'block'
         },
         {
-            nama: 'Fakhira',
+            nama: 'Syarifah',
             jabatan: 'Staff Ahli KEMA',
             foto: '',
             display: 'block'
