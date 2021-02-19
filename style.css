@@ -800,10 +800,8 @@ body {
     font-size: 14px;
     margin-right: 0.8rem;
 }
-.article-meta .article-comments{
+.article-meta .author{
     font-size: 14px;
-    text-decoration: none;
-    color: #fff;
 }
 .article-meta i{
     margin-right: 0.5rem;
@@ -2047,4 +2045,127 @@ body {
     .ebook-link-container ul li{
         font-size: 14px;
     }
+}
+
+/* article archive page */
+.section-article-page{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.article-page-container{
+    width: 75%;
+    margin-top: 15vh;
+}
+.article-page-title{
+    margin-bottom: 2rem;
+}
+.article-post{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 3rem 0;
+}
+.article-post-img{
+    min-width: 250px;
+    height: 250px;
+    margin-right: 2rem;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.article-post-img img{
+    height: 100%;
+    border-radius: 30px;
+}
+.article-post-title{
+    color: #000;
+}
+.article-post-meta span{
+    font-size: 16px;
+}
+.article-post-meta i{
+    margin-right: 0.5rem;
+}
+.article-post-date{
+    margin-right: 1rem;
+}
+.article-post-excerpt{
+    margin-top: 1rem;
+}
+.article-post-readmore{
+    color: #000;
+    background-color: var(--yellow);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+.article-post-readmore i{
+    margin-left: 0.5rem;
+}
+.article-post-readmore:hover{
+    color: var(--blue)
+}
+.article-post-title:hover{
+    color: var(--blue)
+}
+
+@media only screen and (max-width: 768px){
+    .article-page-title{
+        font-size: 36px;
+    }
+    .article-post{
+        flex-direction: column;
+    }
+    .article-post-img{
+        width: 100%;
+        margin: 0 0 2rem 0;
+        align-self: center;
+        position: relative;
+    }
+    .article-post-img img{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .article-post-date{
+        display: block;
+    }
+}
+
+/* single post page */
+.section-post{
+    width: 100vw;
+}
+.post-container{
+    width: 60%;
+    margin: 15vh auto 10vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.post-excerpt{
+    margin: 0.5rem 0 2rem 0;
+    font-size: 36px;
+}
+.post-meta i{
+    margin-right: 0.5rem;
+}
+.post-date{
+    margin: 0 1.5rem;
+}
+.post-image{
+    width: 70%;
+    overflow: hidden;
+    margin: 3rem 0;
+}
+.post-image img{
+    width: 100%;
+}
+.post-text{
+    text-align: justify;
+    font-size: 21px;
+    width: 80%;
 }
