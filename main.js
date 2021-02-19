@@ -144,8 +144,9 @@ document.querySelector('.search-btn').addEventListener('click', (e)=>{
             expandSearch = false;
             document.querySelector('.search-txt').classList.remove('expand');
         } else {
+            localStorage.searchText = document.querySelector('.search-txt').value;
             document.querySelector('.search-txt').value = '';
-            window.location.href = '#';
+            window.location.href = 'search.html';
         }
     }
 })
