@@ -111,15 +111,15 @@ body {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #ededed; 
+    background: rgba(0, 0, 0, 0%); 
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #919191; 
+    background:var(--yellow); 
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #474747; 
+    background: #d6a000; 
 }
 /* NAVBAR */
 .nav-container{
