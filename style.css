@@ -85,7 +85,7 @@ a{
         height: auto !important;
     }
 }
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 650px){
     .section{
         height: auto !important;
     }
@@ -195,7 +195,7 @@ body {
         width: 30px;
     }
 }
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 700px){
     .logo-elektro{
         width: 30px;
     }
@@ -399,7 +399,7 @@ body {
         width: 300px;
     }
 }
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 700px) and (min-width: 768.5px){
     .landing-grid{
         display: flex;
         flex-direction: column;
@@ -417,6 +417,7 @@ body {
         margin: auto;
     }
 }
+
 
 /* Landing-logbid */
 .container-logbid{
@@ -709,8 +710,8 @@ body {
     position: relative;
     border-radius: 30px;
     overflow: hidden;
+    opacity: 0;
     box-shadow: none;
-    transform: scale(0, 0);
     -webkit-transition: 0.5s box-shadow ease;
     transition: 0.5s box-shadow ease;
 }
@@ -895,7 +896,7 @@ body {
     }
 }
 
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 700px){
     .archive-landing-title{
         margin-top: 5rem;
     }
@@ -1197,7 +1198,7 @@ body {
     }
 }
 
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 700px){
     .misi-card p{
         font-size: 0.8rem;
     }
@@ -1405,7 +1406,7 @@ body {
     }
 }
 
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 700px){
     .bidang-landing{
         display: flex;
         flex-direction: column;
@@ -1492,7 +1493,7 @@ body {
         width: 70vw;
     }
 }
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 700px){
     .video-bidang-container{
         height: 500px;
         width: 70%;
@@ -1504,7 +1505,7 @@ body {
         width: 700px; 
     }
 }
-@media only screen and (max-height: 600px) and (max-width: 768px){
+@media only screen and (max-height: 700px) and (max-width: 768px){
     .video-bidang-container{
         height: 100vh;
     }
@@ -1903,7 +1904,7 @@ body {
         justify-content: center;
     }
 }
-@media only screen and (max-height: 600px){
+@media only screen and (max-height: 700px){
     .diktat-nav{
         height: 60vh;
     }

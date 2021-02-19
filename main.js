@@ -288,14 +288,15 @@ function indexLoaded(e){
             if (!(document.querySelector('.article-container').classList.contains('active'))){
                 document.querySelector('.article-container').classList.add('active');
                 anime.timeline({
+                    easing: 'easeOutExpo',
                 }).add({
                     targets: '.archive-landing-title',
                     opacity: [0, 1],
                     duration: 500,
-                    easing: 'easeOutExpo',
                 }).add({
                     targets: '.article-card',
-                    scale: [0, 1],
+                    opacity: [0, 1],
+                    translateY: ['-100', '0'],
                     delay: anime.stagger(200),
                 }).add({
                     targets: '.article-button',
