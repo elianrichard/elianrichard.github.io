@@ -132,6 +132,25 @@ document.querySelector('.main-navbar').querySelectorAll('li').forEach((a)=>{
     a.querySelector('div').classList.add('line');
 });
 
+//Search Box
+let expandSearch = false;
+document.querySelector('.search-btn').addEventListener('click', (e)=>{
+    e.preventDefault();
+    if (!expandSearch){
+        expandSearch = true;
+        document.querySelector('.search-txt').classList.add('expand');
+    } else {
+        if (document.querySelector('.search-txt').value == ''){
+            expandSearch = false;
+            document.querySelector('.search-txt').classList.remove('expand');
+        } else {
+            document.querySelector('.search-txt').value = '';
+            window.location.href = '#';
+        }
+    }
+})
+
+
 //index.html
 function indexLoaded(e){
     //SCROLL ANIMATION
