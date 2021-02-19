@@ -187,7 +187,7 @@ function indexLoaded(e){
     window.addEventListener('scroll', () => {
         var logoBidangPosition = document.querySelector('.logbid-logo').getBoundingClientRect().top;
         var youtubePosition = document.querySelector('.video-highlight').getBoundingClientRect().top;
-        var artikelPosition = document.querySelector('.artikel-container').getBoundingClientRect().top;
+        var artikelPosition = document.querySelector('.article-container').getBoundingClientRect().top;
         var socialMediaPosition = document.querySelector('.social-media-icons').parentElement.getBoundingClientRect().top;
         var screenHeight = window.innerHeight;
 
@@ -282,6 +282,26 @@ function indexLoaded(e){
                         duration: 500,
                     }, '-=900')
                 }
+            }
+        }
+        if (artikelPosition < screenHeight / 2){
+            if (!(document.querySelector('.article-container').classList.contains('active'))){
+                document.querySelector('.article-container').classList.add('active');
+                anime.timeline({
+                }).add({
+                    targets: '.archive-landing-title',
+                    opacity: [0, 1],
+                    duration: 500,
+                    easing: 'easeOutExpo',
+                }).add({
+                    targets: '.article-card',
+                    scale: [0, 1],
+                    delay: anime.stagger(200),
+                }).add({
+                    targets: '.article-button',
+                    scale: [0, 1],
+                    duration: 500,
+                })
             }
         }
         var screenHeightSocialMedia;
@@ -1536,52 +1556,64 @@ function akademisLoaded(e){
     .add(navAnimate, '-=400')
 
     let isOpen = false;
+    let onProgress = false;
+
     setTimeout(function(){
         document.querySelector('#ebook-a').addEventListener('click', (e) => {
             var ebook = document.querySelectorAll('.ebook-list');
-            
-            if (isOpen){
-                setTimeout (function(){
-                    isOpen = false;
+            var ebookDropdown = document.querySelector('.ebook-dropdown');
+            if (!onProgress){
+                if (isOpen){
+                    onProgress = true;
+                    animation = anime.timeline({
+                        easing: 'easeOutQuad',
+                        complete: () => {
+                            isOpen = false;
+                            onProgress = false;
+                            ebookDropdown.style.display = 'none';
+                            ebook.forEach(function(a){
+                                a.style.display = 'none';
+                            })
+                        }
+                    }).add({
+                        targets: '.ebook-list',
+                        duration: 400,
+                        translateX: ['0', '-50'],
+                        opacity: ['1', '0'],
+                        delay: (el, i) => {
+                            return 100 * i;
+                        },
+                    }).add({
+                        targets: '.ebook-dropdown',
+                        height: 0,
+                        duration: 1000,
+                    })
+                }else{
+                    ebookDropdown.style.display = 'block';
                     ebook.forEach(function(a){
-                        a.style.display = '';
-                    });
-                }, 1400)
-                animation = anime.timeline({
-                    easing: 'easeOutQuad'
-                }).add({
-                    targets: '.ebook-list',
-                    duration: 400,
-                    translateX: ['0', '-50'],
-                    opacity: ['1', '0'],
-                    delay: (el, i) => {
-                        return 100 * i;
-                    },
-                }).add({
-                    targets: '.ebook-dropdown',
-                    height: 0,
-                    duration: 1000,
-                })
-            }else{
-                ebook.forEach(function(a){
-                    a.style.display = 'block';
-                })
-                isOpen = true;
-                animation = anime.timeline({
-                    easing: 'easeOutSine'
-                }).add({
-                    targets: '.ebook-dropdown',
-                    height: 100,
-                    duration: 1000,
-                }).add({
-                    targets: '.ebook-list',
-                    duration: 400,
-                    translateX: ['-50', '0'],
-                    opacity: ['0', '1'],
-                    delay: (el, i) => {
-                        return 100 * i;
-                    },
-                })
+                        a.style.display = 'block';
+                    })
+                    onProgress = true;
+                    isOpen = true;
+                    animation = anime.timeline({
+                        easing: 'easeOutSine',
+                        complete: () => {
+                            onProgress = false;
+                        }
+                    }).add({
+                        targets: '.ebook-dropdown',
+                        height: 100,
+                        duration: 1000,
+                    }).add({
+                        targets: '.ebook-list',
+                        duration: 400,
+                        translateX: ['-50', '0'],
+                        opacity: ['0', '1'],
+                        delay: (el, i) => {
+                            return 100 * i;
+                        },
+                    })
+                }
             }
         })
     }, 2000)

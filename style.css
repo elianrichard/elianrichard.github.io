@@ -1,3 +1,13 @@
+/*
+Theme Name: IME FTUI 2021
+Text Domain: IME FTUI
+Version: 1.0
+Description: Dibuat dengan kesabaran dan sepenuh hati :)
+Tags: Responsive, Animation, Organization
+Author: Kominfun IME FTUI 2021
+Author URI: https://instagram.com/imeftui
+*/
+
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
 :root {
@@ -41,6 +51,9 @@ html{
 }
 body{
     overflow-x: hidden;
+}
+a{
+    text-decoration: none !important;
 }
 .blue{
     color: var(--blue) !important;
@@ -273,7 +286,6 @@ body {
     grid-template-columns: 1fr 600px 1fr;
 }
 .landing-title-text{
-    opacity: 0;
     color: var(--blue);
 }
 .landing-img-kiri{
@@ -566,6 +578,9 @@ body {
 /* Landing - Youtube */
 .youtube-grid{
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .youtube-highlight{
     display: grid;
@@ -669,6 +684,223 @@ body {
     }
 }
 
+/* ARTICLE ARCHIVE LANDING */
+.archive-landing-title{
+    margin-bottom: 1.8rem;
+    opacity: 0;
+}
+.article-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.article-cards{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.article-card{
+    width: 370px;
+    height: 500px;
+    margin: 0 1rem;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: none;
+    transform: scale(0, 0);
+    -webkit-transition: 0.5s box-shadow ease;
+    transition: 0.5s box-shadow ease;
+}
+.article-thumbnail{
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--red)
+}
+.article-date{
+    width: 75px;
+    height: 75px;
+    z-index: 5;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 1.1rem;
+}
+.article-thumbnail-image-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.article-thumbnail-image{
+    height: 100%;
+    transform: scale(1, 1);
+    filter: brightness(100%);
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+.article-content{
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--blue);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff !important;
+}
+.article-text{
+    color: #fff !important;
+}
+.article-title{
+    margin-bottom: 0.5rem;
+}
+.article-tag{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--yellow);
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    color: #fff;
+    border-radius: 0 10px 0 0;
+}
+.article-excerpts{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    font-size: 16px;
+    -webkit-transition: 0.5s ease-in-out all;
+    transition: 0.5s ease-in-out all;
+}
+.article-meta{
+    margin-top: 1rem;
+}
+.article-meta .timestamps{
+    font-size: 14px;
+    margin-right: 0.8rem;
+}
+.article-meta .article-comments{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+}
+.article-meta i{
+    margin-right: 0.5rem;
+}
+
+.article-card:hover{
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 30%);
+}
+.article-card:hover .article-excerpts{
+    max-height: 150px !important;
+    opacity: 1 !important;
+}
+.article-card:hover .article-thumbnail-image{
+    transform: scale(1.1, 1.1);
+    filter: brightness(80%);
+}
+.article-button{
+    transform: scale(0, 0);
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 1020px){
+    .archive-landing-title{
+        font-size: 36px;
+    }
+    .article-date{
+        width: 60px;
+        height: 60px;
+    }
+    .article-title{
+        font-size: 20px;
+    }
+    .article-subtitle{
+        font-size: 18px;
+    }
+    .article-meta .timestamps{
+        display: block
+    }
+    .article-excerpts{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .article-container{
+        padding: 0 2rem;
+    }
+    .archive-landing-title{
+        margin-top: 5rem;
+    }
+    .article-cards{
+        flex-direction: column
+    }
+    .article-card{
+        height: 350px;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .article-thumbnail{
+        height: 100%;
+        width: 50%;
+        right: 0;
+    }
+    .article-tag{
+        top: auto;
+        bottom: 0;
+        left: 100%;
+        margin: 0;
+    }
+    .article-date{
+        background-color: transparent;
+    }
+    .article-content{
+        height: 100%;
+        width: 50%;
+        left: 0;
+    }
+    .article-meta{
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    .article-content{
+        width: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 40%)
+    }
+    .article-thumbnail{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 600px){
+    .archive-landing-title{
+        margin-top: 5rem;
+    }
+}
+
 /* SOCIAL MEDIA */
 .social-media-icons{
     display: flex;
@@ -680,7 +912,7 @@ body {
     -webkit-transition: 0.4s transform ease;
     transition: 0.4s transform ease;
 }
-.social-media-icons i{
+.social-media-icons .landing{
     transform: scale(0);
 }
 .social-media-icons a{
@@ -1461,6 +1693,10 @@ body {
     display: inline-block;
     overflow: hidden;
 }
+.diktat-container{
+    display: flex;
+    justify-content: center;
+}
 .diktat-container .text-wrapper{
     padding-right: 3rem;
 }
@@ -1475,6 +1711,7 @@ body {
 }
 .ebook-dropdown{
     height: 0;
+    display: none;
 }
 .ebook-lists{
     list-style-type: none;
