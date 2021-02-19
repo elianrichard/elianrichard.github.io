@@ -2255,3 +2255,26 @@ body {
     color: #fff !important;
     border-radius: 10px;
 }
+@media only screen and (max-width: 768px){
+    .container-search{
+        margin-top: 10vh;
+        height: 80vh;
+    }
+    .search-box-result{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .search-txt-result{
+        height: 50px;
+    }
+    .search-btn-result{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+}
