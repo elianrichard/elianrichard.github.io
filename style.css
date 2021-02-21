@@ -1446,7 +1446,7 @@ body {
         margin: 0;
     }
     .bidang-foto-container{
-        height: auto;
+        height: auto !important;
         grid-template-columns: 1fr 1fr;
     }
     .bidang-foto{
@@ -1509,7 +1509,7 @@ body {
 .container-video-bidang-section{
     width: 80%;
     height: 100%;
-    margin: auto;
+    margin: 0 auto 0 auto;
 }
 .video-bidang-title{
     text-align: right;
@@ -1541,8 +1541,15 @@ body {
 }
 
 @media only screen and (max-width: 768px){
+    .container-video-bidang-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
     .video-bidang-container{
-        height: 500px;
+        height: auto !important;
+        display: block
     }
 }
 @media only screen and (max-width: 600px){
