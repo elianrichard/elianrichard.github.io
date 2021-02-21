@@ -144,9 +144,8 @@ document.querySelector('.search-btn').addEventListener('click', (e)=>{
             expandSearch = false;
             document.querySelector('.search-txt').classList.remove('expand');
         } else {
-            localStorage.searchText = document.querySelector('.search-txt').value;
+            document.querySelector('#searchform').submit();
             document.querySelector('.search-txt').value = '';
-            window.location.href = 'search.html';
         }
     }
 })
@@ -1223,7 +1222,6 @@ function bidangLoaded(e){
             document.querySelectorAll('.bp')[i].style.display = x.namaBP[i].display;
         }
     }
-
     if (localStorage.selectedBidang === 'kominfo'){
         bidangContentLoad (bidangKominfo);
     } else if (localStorage.selectedBidang === 'kema'){
