@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Elian Richard</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body>
+  <div class="fullpage flex-center">
+    <div class="container projects flex-center clear">
+      <div class="title flex-center">
+        <div class="back">
+          <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+            </svg>
+          </a>
+        </div>
+        <div class="text">
+          <h1>Projects</h1>
+          <div class="line"></div>
+        </div>
+      </div>
+      <p class="desc bold center proj-title">Ikatan Mahasiswa Elektro FTUI Web Design</p>
+      <div class="image">
+        <a href="project_ime.html">
+          <img src="" alt="">
+        </a>
+      </div>
+      <div class="cta">
+        <div>
+          <a href="project_ime.html" class="desc bold">view project</a>
+          <div class="line"></div>
+        </div>
+        <div>
+          <a href="#" class="desc bold site" target="_blank">visit site</a>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll clear">
+      <div class="active"></div>
+    </div>
+  </div>
+  
+  <script src="./js/projects.js"></script>
+  <script src="./js/anime.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    disableLink();
+    // localStorage.clear()
+    //DYNAMIC PAGE VIEW
+    var pageNumber;
+    if (localStorage.projectPage == null){
+      localStorage.setItem("projectPage", 1);
+      pageNumber = 1;
+    } else {
+      pageNumber = localStorage.getItem("projectPage");
+    }
+
+    //DYNAMIC SCROLL COUNT
+    for (let i = 0; i < projectsCount-1; i++){
+      var newDiv = document.createElement('div');
+      document.querySelector('.scroll').insertBefore(newDiv, document.querySelector('.active').nextElementSibling);
+    }
+    document.querySelector('.scroll').style.gridTemplateRows = `repeat(${projectsCount}, 1fr)`;
+
+    changeContent(pageNumber);
+
+    //PREVENT PARALLEL ANIMATION
+    var running = true;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      var fontLoad = setInterval(()=>{
+        if(document.fonts.status == "loaded"){
+          document.querySelectorAll('.clear').forEach((a) => {
+            a.classList.remove('clear');
+          })
+          projectAnimation();
+          clearInterval(fontLoad);
+        }
+      }, 1000);
+    });
+
+    //PAGE SCROLL EVENT
+    window.addEventListener('wheel', (e) => {
+      if (e.deltaY < 0 && !running){
+        running = true;
+        scrollEvent(0);
+      } else if (e.deltaY > 0 && !running){
+        running = true;
+        scrollEvent(1);
+      }
+    });
+
+    //PAGE CLICK EVENT
+    var scrollArray = Array.from(document.querySelector('.scroll').querySelectorAll('div'));
+    document.querySelector('.scroll').querySelectorAll('div').forEach((e) =>{
+      e.addEventListener('click', (a)=>{
+        var selectedPage = scrollArray.indexOf(a.target) + 1;
+        var dir;
+
+        if (selectedPage != pageNumber && !running){
+          running = true;
+
+          if (pageNumber < selectedPage) dir = 1;
+          else if (pageNumber > selectedPage) dir = 0;
+
+          pageNumber = selectedPage;
+          localStorage.setItem("projectPage", pageNumber);
+          outroAnime(dir, pageNumber);
+        }
+      })
+    })
+  </script>
+</body>
+</html>
