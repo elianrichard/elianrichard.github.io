@@ -18,7 +18,7 @@ var projectsLists = [
     title: 'Kamuka Parwata FTUI Web Design',
     heading: 'KAPA FTUI',
     image: './assets/kapaftui/pic1.png',
-    site: 'https://kapaftui.id',
+    site: 'http://kapaftui.id',
     detail: 'Kamuka Parwata is an organization in Engineering Faculty of Universitas Indonesia which focuses in outer sport adventure. The goal in this project is to provide <span class="bold light">real adventure experience</span> through photography taken from various adventure done by the organization. The organization consist of five division, there are rock climbing, diving, mountaineering, water sports, and caving. The highlight of this website is to show <span class="bold light">the excitement and thrilling experience</span> in outdoor adventure while maintaining the <span class="bold light">simplicity and proffesionalism</span> work shown by the organization.',
     subImage: [
       './assets/kapaftui/pic2.png',
