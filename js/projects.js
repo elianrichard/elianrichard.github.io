@@ -15,6 +15,20 @@ var projectsLists = [
     ],
   },
   {
+    title: 'href.id Web Design',
+    heading: 'HREF.ID',
+    image: './assets/hrefid/pic1.png',
+    site: 'https://hrefid.com',
+    detail: 'Href.id is a creative website development agency which comitted to make a great visual experience for your brand, by quality and perseverance. This website highlights is the simplicity and the modern feel and look, giving the proffesionalism and authenticity for the company with a great UX using simple animation.',
+    subImage: [
+      './assets/hrefid/pic2.png',
+      './assets/hrefid/pic3.png',
+      './assets/hrefid/pic4.png',
+      './assets/hrefid/pic5.png',
+      './assets/hrefid/pic6.png',
+    ],
+  },
+  {
     title: 'Kamuka Parwata FTUI Web Design',
     heading: 'KAPA FTUI',
     image: './assets/kapaftui/pic1.png',
