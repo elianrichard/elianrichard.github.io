@@ -19,7 +19,7 @@ var projectsLists = [
     heading: 'HREF.ID',
     image: './assets/hrefid/pic1.png',
     site: 'https://hrefid.com',
-    detail: 'Href.id is a creative website development agency which comitted to make a great visual experience for your brand, by quality and perseverance. This website highlights is the simplicity and the modern feel and look, giving the proffesionalism and authenticity for the company with a great UX using simple animation.',
+    detail: '<span class="bold light">Href.id</span> is a <span class="bold light">creative website development agency</span> which comitted to make a great visual experience for your brand, by quality and perseverance. This website highlights is the <span class="bold light">simplicity</span> and the <span class="bold light">modern feel</span> and <span class="bold light">look</span>, giving the <span class="bold light">proffesionalism</span>  and <span class="bold light">authenticity</span> for the company with a <span class="bold light">great UX</span> using <span class="bold light">simple animation.</span>',
     subImage: [
       './assets/hrefid/pic2.png',
       './assets/hrefid/pic3.png',
