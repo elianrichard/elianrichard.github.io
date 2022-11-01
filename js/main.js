@@ -64,7 +64,7 @@ function darkMode() {
     localStorage.dark = 1;
     anime({
       targets: ".darkmode-bg",
-      scale: 350,
+      scale: 400,
       easing: "easeInOutExpo",
       duration: 2000,
       complete: () => {
@@ -496,10 +496,6 @@ function projectContentLoad() {
     newImg.setAttribute("src", subImg[i]);
     subImgNode.appendChild(newImg);
   }
-
-  var details = projectsLists[projectNumber].detail
-    .replace("*{", "<span class='bold light'>")
-    .replace("}*", "</span>");
 
   document.querySelector(
     "title"
