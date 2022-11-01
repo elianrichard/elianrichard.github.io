@@ -486,7 +486,9 @@ function projectDetailAnimation() {
 }
 
 function projectContentLoad() {
-  var projectNumber = localStorage.projectPage - 1;
+  var projectNumber = localStorage.projectPage
+    ? localStorage.projectPage - 1
+    : 0;
   var subImg = projectsLists[projectNumber].subImage;
   var subImgCount = subImg.length;
 
@@ -510,6 +512,9 @@ function projectContentLoad() {
     projectsLists[projectNumber].detail
       .replaceAll("*{", "<span class='bold light'>")
       .replaceAll("}*", "</span>")
-      .replaceAll(/\[([^\]]+)\]\(([^)]+)\)/g, "<a href=$2 target='_blank' rel='noreferrer' class='bold dark'>$1</a>");
+      .replaceAll(
+        /\[([^\]]+)\]\(([^)]+)\)/g,
+        "<a href=$2 target='_blank' rel='noreferrer' class='bold dark'>$1</a>"
+      );
   document.querySelector(".visit").href = projectsLists[projectNumber].site;
 }
