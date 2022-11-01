@@ -1,96 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico">
-  <title>Portofolio - Elian Richard</title>
-</head>
-<body>
-  <div class="fullpage flex-center">
-    <div class="darkmode flex-center clear">
-      <div class="svg-div flex-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
-          <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
-        </svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <title>Portofolio - Elian Richard</title>
+  </head>
+  <body>
+    <div class="fullpage flex-center">
+      <div class="darkmode flex-center clear">
+        <div class="svg-div flex-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-lightbulb"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"
+            />
+          </svg>
+        </div>
+        <div class="darkmode-bg"></div>
       </div>
-      <div class="darkmode-bg"></div>
+      <div class="container flex-center home clear">
+        <div class="center">
+          <h1 class="title">
+            <span class="hi">Hi</span
+            ><span class="hi-next"
+              >, I'm <span class="dark">Elian Richard.</span></span
+            >
+          </h1>
+          <p class="desc sub-title">
+            I’m a Bachelor of
+            <span class="bold light">Electrical Engineering</span> from
+            Universitas Indonesia, an
+            <span class="bold light">UI/UX designer</span>, and a
+            <span class="bold light">programming enthusiast</span>
+          </p>
+        </div>
+        <div class="nav desc bold">
+          <div>
+            <a href="projects.html">projects</a>
+            <div class="line"></div>
+          </div>
+          <div>
+            <a href="contact.html">contact</a>
+            <div class="line"></div>
+          </div>
+          <div>
+            <a
+              href="https://drive.google.com/file/d/1nOdbtOmMBWP-9vtAXjnGYhkXD8_YjWhh/view?usp=sharing"
+              target="_blank"
+              >cv</a
+            >
+            <div class="line_cv"></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container flex-center home clear">
-      <div class="center">
-        <h1 class="title"><span class="hi">Hi</span><span class="hi-next">, I'm <span class="dark">Elian Richard.</span></span></h1>
-        <p class="desc sub-title">I’m a Bachelor of <span class="bold light">Electrical Engineering</span> from Universitas Indonesia, an <span class="bold light">UI/UX designer</span>, and a <span class="bold light">programming enthusiast</span></p>
-      </div>
-      <div class="nav desc bold">
-        <div>
-          <a href="projects.html">projects</a>
-          <div class="line"></div>
-        </div>
-        <div>
-          <a href="contact.html">contact</a>
-          <div class="line"></div>
-        </div>
-        <div>
-          <a href="https://drive.google.com/file/d/1nOdbtOmMBWP-9vtAXjnGYhkXD8_YjWhh/view?usp=sharing" target="_blank">cv</a>
-          <div class="line_cv"></div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <script src="./js/anime.min.js"></script>
-  <script src="./js/main.js"></script>
-  <script>
-    var runningAnime = true; //false when animation done
-    if (localStorage.dark == 0) var darkModeToggle = false;
-    else if (localStorage.dark == 1) var darkModeToggle = true;
-    
-    disableLink();
-    var hiToCenter = (window.innerWidth / 2) - document.querySelector(".hi").getBoundingClientRect().left;
-    window.addEventListener('DOMContentLoaded', () => {
-      var fontLoad = setInterval(()=>{
-        if(document.fonts.status == "loaded"){
-          document.querySelectorAll('.clear').forEach((a) => {
-            a.classList.remove('clear');
-          })
-          homeAnimation();
-          clearInterval(fontLoad);
+    <script src="./js/anime.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      var runningAnime = true; //false when animation done
+      if (localStorage.dark == 0) var darkModeToggle = false;
+      else if (localStorage.dark == 1) var darkModeToggle = true;
+
+      disableLink();
+      var hiToCenter =
+        window.innerWidth / 2 -
+        document.querySelector(".hi").getBoundingClientRect().left;
+      window.addEventListener("DOMContentLoaded", () => {
+        var fontLoad = setInterval(() => {
+          if (document.fonts.status == "loaded") {
+            document.querySelectorAll(".clear").forEach((a) => {
+              a.classList.remove("clear");
+            });
+            homeAnimation();
+            clearInterval(fontLoad);
+          }
+        }, 1000);
+      });
+
+      var darkModeButton = document.querySelector(".svg-div");
+      var darkModeBG = document.querySelector(".darkmode-bg");
+      var lightBulbSVG = darkModeButton.querySelector("path");
+      var lightsOn =
+        "M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z";
+      var lightsOff =
+        "M2.23 4.35A6.004 6.004 0 0 0 2 6c0 1.691.7 3.22 1.826 4.31.203.196.359.4.453.619l.762 1.769A.5.5 0 0 0 5.5 13a.5.5 0 0 0 0 1 .5.5 0 0 0 0 1l.224.447a1 1 0 0 0 .894.553h2.764a1 1 0 0 0 .894-.553L10.5 15a.5.5 0 0 0 0-1 .5.5 0 0 0 0-1 .5.5 0 0 0 .288-.091L9.878 12H5.83l-.632-1.467a2.954 2.954 0 0 0-.676-.941 4.984 4.984 0 0 1-1.455-4.405l-.837-.836zm1.588-2.653.708.707a5 5 0 0 1 7.07 7.07l.707.707a6 6 0 0 0-8.484-8.484zm-2.172-.051a.5.5 0 0 1 .708 0l12 12a.5.5 0 0 1-.708.708l-12-12a.5.5 0 0 1 0-.708z";
+
+      darkModeButton.addEventListener("mouseenter", () => {
+        if (darkModeToggle) {
+          lightBulbSVG.setAttribute("d", lightsOn);
+        } else {
+          lightBulbSVG.setAttribute("d", lightsOff);
         }
-      }, 1000);
-    });
-    
-    var darkModeButton = document.querySelector(".svg-div");
-    var darkModeBG = document.querySelector(".darkmode-bg");
-    var lightBulbSVG = darkModeButton.querySelector("path");
-    var lightsOn = "M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z";
-    var lightsOff = "M2.23 4.35A6.004 6.004 0 0 0 2 6c0 1.691.7 3.22 1.826 4.31.203.196.359.4.453.619l.762 1.769A.5.5 0 0 0 5.5 13a.5.5 0 0 0 0 1 .5.5 0 0 0 0 1l.224.447a1 1 0 0 0 .894.553h2.764a1 1 0 0 0 .894-.553L10.5 15a.5.5 0 0 0 0-1 .5.5 0 0 0 0-1 .5.5 0 0 0 .288-.091L9.878 12H5.83l-.632-1.467a2.954 2.954 0 0 0-.676-.941 4.984 4.984 0 0 1-1.455-4.405l-.837-.836zm1.588-2.653.708.707a5 5 0 0 1 7.07 7.07l.707.707a6 6 0 0 0-8.484-8.484zm-2.172-.051a.5.5 0 0 1 .708 0l12 12a.5.5 0 0 1-.708.708l-12-12a.5.5 0 0 1 0-.708z";
+      });
+      darkModeButton.addEventListener("mouseleave", () => {
+        if (darkModeToggle) {
+          lightBulbSVG.setAttribute("d", lightsOff);
+        } else {
+          lightBulbSVG.setAttribute("d", lightsOn);
+        }
+      });
 
-    darkModeButton.addEventListener("mouseenter", () => {
-      if (darkModeToggle){
-        lightBulbSVG.setAttribute("d", lightsOn);
-      } else {
+      if (darkModeToggle) {
+        darkModeButton.classList.toggle("on");
         lightBulbSVG.setAttribute("d", lightsOff);
+        darkModeBG.style.opacity = 0;
+        darkModeBG.style.transform = "scale(350)";
+        document.querySelector(".darkmode").style.zIndex = 0;
       }
-    });
-    darkModeButton.addEventListener("mouseleave", () => {
-      if (darkModeToggle){
-        lightBulbSVG.setAttribute("d", lightsOff);
-      } else {
-        lightBulbSVG.setAttribute("d", lightsOn);
-      }
-    });
-
-    if (darkModeToggle) {
-      darkModeButton.classList.toggle("on");
-      lightBulbSVG.setAttribute("d", lightsOff);
-      darkModeBG.style.opacity = 0;
-      darkModeBG.style.transform = 'scale(350)';
-      document.querySelector('.darkmode').style.zIndex = 0;
-    }
-    darkModeButton.addEventListener("click", darkMode);
-
-  </script>
-</body>
+      darkModeButton.addEventListener("click", darkMode);
+    </script>
+  </body>
 </html>
