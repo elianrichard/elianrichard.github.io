@@ -1,6 +1,6 @@
 var projectsLists = [
   {
-    title: "Ecoplease Web Design",
+    title: "Ecoplease Web Development",
     heading: "ECOPLEASE",
     image: "./assets/ecoplease/pic1.webp",
     site: "https://ecoplease.vercel.app",
@@ -15,7 +15,7 @@ var projectsLists = [
     ],
   },
   {
-    title: "href.id Web Design",
+    title: "href.id Web Development",
     heading: "HREF.ID",
     image: "./assets/hrefid/pic1.webp",
     site: "https://hrefid.com",
@@ -30,7 +30,7 @@ var projectsLists = [
     ],
   },
   {
-    title: "Ikatan Mahasiswa Elektro FTUI Web Design",
+    title: "Ikatan Mahasiswa Elektro FTUI Web Development",
     heading: "IME FTUI",
     image: "./assets/imeftui/pic1.webp",
     site: "https://elianrichard.github.io/imeftui",
