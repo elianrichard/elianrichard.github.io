@@ -3,9 +3,9 @@ var projectsLists = [
     title: "Ecoplease Web Development",
     heading: "ECOPLEASE",
     image: "./assets/ecoplease/pic1.webp",
-    site: "https://ecoplease.vercel.app",
+    site: "https://ecoplease.id",
     detail:
-      "*{Ecoplease}* is a B2B company, selling various product specialized in compostable cutleries and food packaging. This project uses a *{Next.js}* framework along with *{React Query}* library for asynchronous data fetching as well as *{Framer Motion}* for the UI animation. In order to let the client *{maintain their own website's}* product & blog lists, *{Wordpress}* is used as the CMS by utilizing the REST API provided as the endpoint. This website is well *{optimized and supports great SEO}*, scoring a grade of [A in GTmetrix](https://gtmetrix.com/reports/ecoplease.vercel.app/cNAkHQgc/) and [77 out of 100 in SEO Site Checkup](https://seositecheckup.com/seo-audit/ecoplease.vercel.app).",
+      "*{Ecoplease}* is a B2B company, selling various product specialized in compostable cutleries and food packaging. This project uses a *{Next.js}* framework along with *{React Query}* library for asynchronous data fetching as well as *{Framer Motion}* for the UI animation. In order to let the client *{maintain their own website's}* product & blog lists, *{Wordpress}* is used as the CMS by utilizing the REST API provided as the endpoint. This website is well *{optimized and supports great SEO}*, scoring a grade of [A in GTmetrix](https://gtmetrix.com/reports/ecoplease.id/WkBJ55Dp/) and [77 out of 100 in SEO Site Checkup](https://seositecheckup.com/seo-audit/ecoplease.id).",
     subImage: [
       "./assets/ecoplease/pic2.webp",
       "./assets/ecoplease/pic3.webp",
