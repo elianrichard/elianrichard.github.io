@@ -425,6 +425,10 @@ function changeContent(page) {
   document.querySelector(".image").querySelector("img").src =
     projectsLists[page - 1].image;
   document.querySelector(".site").href = projectsLists[page - 1].site;
+  if (projectsLists[page - 1].site !== "#")
+    document.querySelector(".site").setAttribute("target", "_blank");
+  else document.querySelector(".site").setAttribute("target", "_self");
+
   document.querySelector(".active").classList.remove("active");
   document
     .querySelector(`.scroll div:nth-child(${page})`)

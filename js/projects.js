@@ -15,6 +15,21 @@ var projectsLists = [
     ],
   },
   {
+    title: "YourPromise Short Film Web Development",
+    heading: "YourPromise Short Film",
+    image: "./assets/yourpromise/pic1.webp",
+    site: "https://yourpromiseshortfilm.com/",
+    detail:
+      "*{YourPromise}* is a short film thesis from California State University Northridge, which aims to *{create a brand identity}* for the film and *{evoke visitors' empathy}* towards the backstory. The film revolves around the story of a child who died in a school shooting incident. The mood board was inspired by *{kindergarten and elementary school environments}*, featuring bulletin boards, donation boxes with cardboard cutouts, playful doodles, polaroid, stickers, and more. The story section of the website *{effectively emphasizes the backstory}* by *{'forcing'}* visitors to read on *{while scrolling down}* the page.",
+    subImage: [
+      "./assets/yourpromise/pic2.webp",
+      "./assets/yourpromise/pic3.webp",
+      "./assets/yourpromise/pic4.webp",
+      "./assets/yourpromise/pic5.webp",
+      "./assets/yourpromise/pic6.webp",
+    ],
+  },
+  {
     title: "href.id Web Development",
     heading: "HREF.ID",
     image: "./assets/hrefid/pic1.webp",
@@ -35,7 +50,7 @@ var projectsLists = [
     image: "./assets/imeftui/pic1.webp",
     site: "https://elianrichard.github.io/imeftui",
     detail:
-      "IME FTUI is an Executive Council of Electrical Engineering Students in Universitas Indonesia. This project goal is to achieve *{new, fresh, and user-friendly design}* to provide useful  information for the students of Electrical Engineering. Aside from information about the organization, they also upload an article monthly, summaries of lecture, and a collection of lecture book to be downloaded by the students. The highlight of this project is to provide a *{great user experience}* while maintaining the *{simplicity}* of the website.",
+      "*{IME FTUI}* is an Executive Council of Electrical Engineering Students in Universitas Indonesia. This project goal is to achieve *{new, fresh, and user-friendly design}* to provide useful  information for the students of Electrical Engineering. Aside from information about the organization, they also upload an article monthly, summaries of lecture, and a collection of lecture book to be downloaded by the students. The highlight of this project is to provide a *{great user experience}* while maintaining the *{simplicity}* of the website.",
     subImage: [
       "./assets/imeftui/pic2.webp",
       "./assets/imeftui/pic3.webp",
@@ -45,19 +60,20 @@ var projectsLists = [
       "./assets/imeftui/pic7.webp",
     ],
   },
-  // {
-  //   title: 'Kamuka Parwata FTUI Web Design',
-  //   heading: 'KAPA FTUI',
-  //   image: './assets/kapaftui/pic1.webp',
-  //   site: 'http://kapaftui.id',
-  //   detail: 'Kamuka Parwata is an organization in Engineering Faculty of Universitas Indonesia which focuses in outer sport adventure. The goal in this project is to provide *{real adventure experience}* through photography taken from various adventure done by the organization. The organization consist of five division, there are rock climbing, diving, mountaineering, water sports, and caving. The highlight of this website is to show *{the excitement and thrilling experience}* in outdoor adventure while maintaining the *{simplicity and proffesionalism}* work shown by the organization.',
-  //   subImage: [
-  //     './assets/kapaftui/pic2.webp',
-  //     './assets/kapaftui/pic3.webp',
-  //     './assets/kapaftui/pic4.webp',
-  //     './assets/kapaftui/pic5.webp',
-  //     './assets/kapaftui/pic6.webp',
-  //   ],
-  // },
+  {
+    title: "Kamuka Parwata FTUI Web Design",
+    heading: "KAPA FTUI",
+    image: "./assets/kapaftui/pic1.webp",
+    site: "#",
+    detail:
+      "*{Kamuka Parwata}* is an organization in Engineering Faculty of Universitas Indonesia which focuses in outer sport adventure. The goal in this project is to provide *{real adventure experience}* through photography taken from various adventure done by the organization. The organization consist of five division, there are rock climbing, diving, mountaineering, water sports, and caving. The highlight of this website is to show *{the excitement and thrilling experience}* in outdoor adventure while maintaining the *{simplicity and proffesionalism}* work shown by the organization.",
+    subImage: [
+      "./assets/kapaftui/pic2.webp",
+      "./assets/kapaftui/pic3.webp",
+      "./assets/kapaftui/pic4.webp",
+      "./assets/kapaftui/pic5.webp",
+      "./assets/kapaftui/pic6.webp",
+    ],
+  },
 ];
 var projectsCount = projectsLists.length;
